@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>WhatsApp Richiesta di progetto | DesertScape Co</title>
+<meta content="Reindirizzamento al canale di richiesta di progetto DesertScape Co WhatsApp." name="description"/>
+<meta content="noindex,follow" name="robots"/>
+<link href="https://www.desertscapeco.com/it/go/whatsapp" rel="canonical"/>
+<script>
+      (function(){
+        var id = "G-B1PJ1RBKB2";
+        var internalKey = "desertscape-internal-traffic";
+        var consentKey = "desertscape-consent-v2";
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+        try {
+          var params = new URLSearchParams(window.location.search);
+          if (params.get("ds_internal") === "1") window.localStorage.setItem(internalKey, "true");
+          if (params.get("ds_internal") === "0") window.localStorage.removeItem(internalKey);
+          if (window.localStorage.getItem(internalKey) === "true") window["ga-disable-" + id] = true;
+        } catch (error) {
+        }
+        window.gtag("consent", "default", {
+          analytics_storage: "granted",
+          ad_storage: "granted",
+          ad_user_data: "denied",
+          ad_personalization: "denied"
+        });
+        window.gtag("consent", "default", {
+          analytics_storage: "denied",
+          ad_storage: "denied",
+          ad_user_data: "denied",
+          ad_personalization: "denied",
+          region: ["AE","ES","FR","GB","GR","IT","JP","LB","SG","US"],
+          wait_for_update: 500
+        });
+        try {
+          var storedConsent = JSON.parse(window.localStorage.getItem(consentKey) || "null");
+          if (storedConsent && typeof storedConsent.analytics === "boolean" && typeof storedConsent.advertising === "boolean") {
+            window.gtag("consent", "update", {
+              analytics_storage: storedConsent.analytics ? "granted" : "denied",
+              ad_storage: storedConsent.advertising ? "granted" : "denied",
+              ad_user_data: "denied",
+              ad_personalization: "denied"
+            });
+          }
+        } catch (error) {
+        }
+        window.gtag("set", "ads_data_redaction", true);
+        window.gtag("set", "url_passthrough", true);
+      })();
+    </script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B1PJ1RBKB2"></script>
+<script>
+      if (!window["ga-disable-G-B1PJ1RBKB2"]) {
+        window.gtag("js", new Date());
+        window.gtag("config", "G-B1PJ1RBKB2");
+      }
+    </script>
+<link href="/assets/styles.css?v=20260820a" rel="stylesheet"/>
+</head>
+<body>
+<main id="main">
+<section class="page-hero">
+<p class="eyebrow">Richiesta di progetto</p>
+<h1>Apertura WhatsApp.</h1>
+<p>Se WhatsApp non si apre automaticamente, continuare con <a href="https://wa.me/966534112205?text=Hello%20DesertScape%20Co%2C%20I%20would%20like%20to%20discuss%20a%20landscape%20project.">DesertScape Co su WhatsApp</a>.</p>
+</section>
+</main>
+<script>
+      (function(){
+        var target = "https://wa.me/966534112205?text=Hello%20DesertScape%20Co%2C%20I%20would%20like%20to%20discuss%20a%20landscape%20project.";
+        var params = {
+          contact_method: "whatsapp",
+          link_url: target,
+          link_text: "WhatsApp project inquiry",
+          lead_type: "project_inquiry",
+          page_intent: "client",
+          source_page: new URLSearchParams(window.location.search).get("source") || "unknown",
+          transport_type: "beacon"
+        };
+        var redirected = false;
+        function redirect() {
+          if (redirected) return;
+          redirected = true;
+          window.location.replace(target);
+        }
+        if (typeof window.gtag === "function" && !window["ga-disable-G-B1PJ1RBKB2"]) {
+          window.gtag("event", "whatsapp_click", params);
+          window.gtag("event", "whatsapp_lead_click", Object.assign({}, params, { event_callback: redirect }));
+          window.setTimeout(redirect, 1100);
+        } else {
+          window.setTimeout(redirect, 250);
+        }
+      })();
+    </script>
+</body>
+</html>

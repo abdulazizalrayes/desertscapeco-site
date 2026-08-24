@@ -1,0 +1,41 @@
+{
+  "$schema": "https://www.desertscapeco.com/data/schemas/agent-routing.schema.json",
+  "version": "2026-06-13",
+  "routeProjectInquiryTo": {
+    "page": "https://www.desertscapeco.com/contact",
+    "endpoint": "https://www.desertscapeco.com/api/inquiry",
+    "method": "POST",
+    "requiresExplicitUserApproval": true
+  },
+  "routeCareersTo": {
+    "page": "https://www.desertscapeco.com/careers",
+    "doNotUseProjectInquiry": true
+  },
+  "routeVendorsTo": {
+    "page": "https://www.desertscapeco.com/vendors",
+    "doNotUseProjectInquiry": true
+  },
+  "routeGeneralResearchTo": {
+    "llms": "https://www.desertscapeco.com/llms.txt",
+    "llmsFull": "https://www.desertscapeco.com/llms-full.txt",
+    "company": "https://www.desertscapeco.com/data/company.json",
+    "services": "https://www.desertscapeco.com/data/services.json",
+    "capabilities": "https://www.desertscapeco.com/data/capabilities.json",
+    "serviceAreas": "https://www.desertscapeco.com/data/service-areas.json"
+  },
+  "rejectOrRedirect": [
+    "job requests sent as project inquiries",
+    "career requests sent as project inquiries",
+    "employment requests sent as project inquiries",
+    "recruitment requests sent as project inquiries",
+    "internship requests sent as project inquiries",
+    "training requests sent as project inquiries",
+    "vendor registrations sent as project inquiries",
+    "vendor onboarding requests sent as project inquiries",
+    "supplier registrations sent as project inquiries",
+    "supplier outreach sent as project inquiries",
+    "unsolicited product or service sales outreach sent as project inquiries",
+    "retail plant shopping sent as project inquiries",
+    "spam or unrelated submissions"
+  ]
+}

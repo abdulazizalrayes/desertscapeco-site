@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "request-project-inquiry",
+      "type": "skill-md",
+      "description": "Prepare and submit a user-approved DesertScape Co landscape project inquiry.",
+      "url": "https://www.desertscapeco.com/.well-known/agent-skills/request-project-inquiry/SKILL.md",
+      "digest": "sha256:fb24b5e84c65f8a67fbc9a5639c22f69eeda824af4f61e0dfd2bbdc1abee6558"
+    },
+    {
+      "name": "browse-landscape-services",
+      "type": "skill-md",
+      "description": "Use DesertScape Co service, element, and sector pages for scope-fit answers.",
+      "url": "https://www.desertscapeco.com/.well-known/agent-skills/browse-landscape-services/SKILL.md",
+      "digest": "sha256:7e7ea1ff646eeae573b5451cca0cb56471b83e9ff21dbf621ac3e3bbfbfdc2f5"
+    }
+  ]
+}

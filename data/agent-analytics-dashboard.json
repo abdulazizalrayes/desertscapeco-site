@@ -1,0 +1,46 @@
+{
+  "$schema": "https://www.desertscapeco.com/data/schemas/agent-analytics-dashboard.schema.json",
+  "version": "2026-06-13",
+  "status": "enabled-through-cloudflare-worker-observability",
+  "privacy": {
+    "storesPersonalData": false,
+    "notes": "The public agent layer logs event type, path, method, user agent, Cloudflare country/colo when available, and tool/resource names. It does not log inquiry body content or private credentials."
+  },
+  "trackedEvents": [
+    "agent_resource_read",
+    "data_resource_read",
+    "mcp_request",
+    "mcp_tool_call",
+    "mcp_resource_read",
+    "openapi_read",
+    "llms_read",
+    "agent_card_read",
+    "inquiry_prepare"
+  ],
+  "currentDashboards": [
+    {
+      "name": "Cloudflare Workers Observability",
+      "scope": "desertscape-form-worker and desertscape-mcp-worker structured logs",
+      "account": "projects@desertscapeco.com"
+    }
+  ],
+  "recommendedQueries": [
+    "Filter logs where service is desertscape-form-worker or desertscape-mcp-worker.",
+    "Group by event to compare llms.txt reads, OpenAPI reads, MCP requests, and MCP tool calls.",
+    "Group by userAgent to identify Googlebot, Bingbot, GPTBot, OAI-SearchBot, ChatGPT-User, PerplexityBot, ClaudeBot, and other AI/search crawlers.",
+    "Group by country to identify international agent or search interest.",
+    "Inspect mcp_tool_call events for match_desertscape_project_scope, match_project_scope, prepare_desertscape_project_inquiry, and prepare_project_inquiry."
+  ],
+  "publicEndpoints": {
+    "mcpCompatibility": "https://www.desertscapeco.com/mcp",
+    "mcpSdk": "https://www.desertscapeco.com/mcp-sdk",
+    "llms": "https://www.desertscapeco.com/llms.txt",
+    "openapi": "https://www.desertscapeco.com/openapi.json",
+    "agentCard": "https://www.desertscapeco.com/.well-known/agent-card.json"
+  },
+  "nextUpgrade": {
+    "name": "Cloudflare Analytics Engine or Logpush dashboard",
+    "requires": "A dedicated analytics binding or Logpush destination approved in Cloudflare.",
+    "reason": "Worker logs are enough for monitoring and debugging. A true aggregate dashboard needs a durable analytics sink."
+  }
+}

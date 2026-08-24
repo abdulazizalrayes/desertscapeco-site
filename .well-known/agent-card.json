@@ -1,0 +1,78 @@
+{
+  "name": "DesertScape Co Agent Interface",
+  "version": "2026-06-13",
+  "description": "Agent-facing discovery for DesertScape Co, a Riyadh-based landscape company serving Saudi Arabia.",
+  "url": "https://www.desertscapeco.com/",
+  "supportedInterfaces": [
+    {
+      "url": "https://www.desertscapeco.com/data/company.json",
+      "transport": "https",
+      "description": "Public company entity data."
+    },
+    {
+      "url": "https://www.desertscapeco.com/data/services.json",
+      "transport": "https",
+      "description": "Public service summaries, URLs, and keywords."
+    },
+    {
+      "url": "https://www.desertscapeco.com/data/capabilities.json",
+      "transport": "https",
+      "description": "Public landscape elements, sectors, and scope-fit data."
+    },
+    {
+      "url": "https://www.desertscapeco.com/data/project-inquiry-schema.json",
+      "transport": "https",
+      "description": "Project inquiry preparation schema for user-approved inquiry drafts."
+    },
+    {
+      "url": "https://www.desertscapeco.com/data/agent-analytics-dashboard.json",
+      "transport": "https",
+      "description": "Privacy-safe agent analytics and monitoring guidance."
+    },
+    {
+      "url": "https://www.desertscapeco.com/index.md",
+      "transport": "https",
+      "description": "Markdown homepage optimized for AI assistants and command-line readers."
+    },
+    {
+      "url": "https://www.desertscapeco.com/api/inquiry",
+      "transport": "https",
+      "description": "User-approved project inquiry submission endpoint."
+    },
+    {
+      "url": "https://www.desertscapeco.com/mcp-sdk",
+      "transport": "streamable-http",
+      "description": "Formal Cloudflare MCP SDK endpoint with typed DesertScape public tools."
+    },
+    {
+      "url": "https://www.desertscapeco.com/mcp",
+      "transport": "streamable-http",
+      "description": "Compatibility MCP endpoint for DesertScape service discovery."
+    }
+  ],
+  "capabilities": {
+    "publicInformation": true,
+    "projectInquiryPreparation": true,
+    "projectInquirySubmission": "only after explicit user approval",
+    "scopeMatching": true,
+    "payments": false,
+    "oauth": false
+  },
+  "skills": [
+    {
+      "id": "request-project-inquiry",
+      "name": "Request a DesertScape project inquiry",
+      "description": "Prepare and submit a user-approved landscape project inquiry to DesertScape Co."
+    },
+    {
+      "id": "browse-landscape-services",
+      "name": "Browse DesertScape landscape services",
+      "description": "Use DesertScape service, element, and sector pages to answer scope-fit questions."
+    },
+    {
+      "id": "match-project-scope",
+      "name": "Match a project scope to DesertScape services",
+      "description": "Use public service and capability data to recommend relevant DesertScape pages and inquiry fields."
+    }
+  ]
+}

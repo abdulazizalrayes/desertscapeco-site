@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.desertscapeco.com/data/schemas/company.schema.json",
+  "title": "DesertScape Company Data",
+  "type": "object",
+  "required": ["brandName", "legalName", "url", "contact", "areaServed", "languages"],
+  "properties": {
+    "$schema": { "type": "string", "format": "uri" },
+    "version": { "type": "string" },
+    "brandName": { "type": "string" },
+    "legalName": { "type": "string" },
+    "publicIdentifiers": {
+      "type": "object",
+      "properties": {
+        "duns": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "description": { "type": "string" },
+    "url": { "type": "string", "format": "uri" },
+    "contact": {
+      "type": "object",
+      "required": ["email", "telephone", "contactPage"],
+      "properties": {
+        "email": { "type": "string" },
+        "telephone": { "type": "string" },
+        "contactPage": { "type": "string", "format": "uri" },
+        "projectInquiryEndpoint": { "type": "string", "format": "uri" }
+      },
+      "additionalProperties": true
+    },
+    "address": { "type": "object" },
+    "areaServed": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "internationalSearchIntentSupported": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "languages": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "sameAs": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" }
+    },
+    "agentUse": { "type": "object" },
+    "primaryPages": { "type": "object" }
+  },
+  "additionalProperties": true
+}

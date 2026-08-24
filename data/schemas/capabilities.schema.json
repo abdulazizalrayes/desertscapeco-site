@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.desertscapeco.com/data/schemas/capabilities.schema.json",
+  "title": "DesertScape Capabilities Data",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string", "format": "uri" },
+    "version": { "type": "string" },
+    "elements": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/capability" }
+    },
+    "sectors": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/capability" }
+    },
+    "clientTypes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "notPrimaryFit": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "$defs": {
+    "capability": {
+      "type": "object",
+      "required": ["id", "name", "url", "scope"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "scope": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,124 @@
+{
+  "servers": [
+    {
+      "serverInfo": {
+        "name": "DesertScape Co MCP SDK",
+        "version": "2026-06-13"
+      },
+      "transport": {
+        "type": "streamable-http",
+        "endpoint": "https://www.desertscapeco.com/mcp-sdk"
+      },
+      "description": "Formal Cloudflare MCP SDK endpoint for DesertScape Co public service discovery, typed scope matching, and user-approved project inquiry preparation.",
+      "capabilities": {
+        "tools": {
+          "listChanged": true
+        },
+        "resources": {
+          "listChanged": false
+        },
+        "prompts": {
+          "listChanged": false
+        }
+      },
+      "tools": [
+        "get_desertscape_overview",
+        "get_company_overview",
+        "list_desertscape_services",
+        "list_services",
+        "list_desertscape_capabilities",
+        "list_desertscape_service_areas",
+        "list_service_areas",
+        "match_desertscape_project_scope",
+        "match_project_scope",
+        "prepare_desertscape_project_inquiry",
+        "prepare_project_inquiry",
+        "read_desertscape_public_resource",
+        "read_public_resource"
+      ],
+      "contact": {
+        "email": "projects@desertscapeco.com",
+        "website": "https://www.desertscapeco.com/contact"
+      },
+      "resources": [
+        {
+          "uri": "https://www.desertscapeco.com/data/company.json",
+          "name": "DesertScape company entity data",
+          "mimeType": "application/json"
+        },
+        {
+          "uri": "https://www.desertscapeco.com/data/services.json",
+          "name": "DesertScape service data",
+          "mimeType": "application/json"
+        },
+        {
+          "uri": "https://www.desertscapeco.com/index.md",
+          "name": "DesertScape markdown homepage",
+          "mimeType": "text/markdown"
+        },
+        {
+          "uri": "https://www.desertscapeco.com/data/capabilities.json",
+          "name": "DesertScape capability data",
+          "mimeType": "application/json"
+        },
+        {
+          "uri": "https://www.desertscapeco.com/data/project-inquiry-schema.json",
+          "name": "DesertScape project inquiry schema",
+          "mimeType": "application/schema+json"
+        },
+        {
+          "uri": "https://www.desertscapeco.com/data/agent-analytics-dashboard.json",
+          "name": "DesertScape agent analytics dashboard guidance",
+          "mimeType": "application/json"
+        }
+      ]
+    },
+    {
+      "serverInfo": {
+        "name": "DesertScape Co MCP Compatibility",
+        "version": "2026-06-13"
+      },
+      "transport": {
+        "type": "streamable-http",
+        "endpoint": "https://www.desertscapeco.com/mcp"
+      },
+      "description": "Compatibility MCP endpoint for DesertScape Co public service discovery and project inquiry guidance.",
+      "capabilities": {
+        "tools": {
+          "listChanged": false
+        },
+        "resources": {
+          "listChanged": false
+        },
+        "prompts": {
+          "listChanged": false
+        }
+      },
+      "tools": [
+        "get_desertscape_overview",
+        "get_company_overview",
+        "list_desertscape_services",
+        "list_services",
+        "list_desertscape_service_areas",
+        "list_service_areas",
+        "match_desertscape_project_scope",
+        "match_project_scope",
+        "prepare_desertscape_project_inquiry",
+        "prepare_project_inquiry",
+        "read_desertscape_public_resource",
+        "read_public_resource"
+      ],
+      "contact": {
+        "email": "projects@desertscapeco.com",
+        "website": "https://www.desertscapeco.com/contact"
+      },
+      "resources": [
+        {
+          "uri": "https://www.desertscapeco.com/index.md",
+          "name": "DesertScape markdown homepage",
+          "mimeType": "text/markdown"
+        }
+      ]
+    }
+  ]
+}

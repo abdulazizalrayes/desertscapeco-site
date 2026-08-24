@@ -1,0 +1,113 @@
+{
+  "$schema": "https://www.desertscapeco.com/data/schemas/services.schema.json",
+  "version": "2026-08-10",
+  "dateModified": "2026-08-10",
+  "lastVerified": "2026-08-10",
+  "provenance": {
+    "publisher": "DesertScape Co",
+    "sourceUrl": "https://www.desertscapeco.com/data/services.json",
+    "accountOwner": "projects@desertscapeco.com",
+    "status": "owner-maintained public service information",
+    "scope": "Service groups and focused service landing pages published on desertscapeco.com."
+  },
+  "serviceGroups": [
+    {
+      "id": "survey-site-assessment",
+      "name": "Survey and Site Assessment",
+      "url": "https://www.desertscapeco.com/services/survey-site-assessment",
+      "summary": "Site review, measurements, access study, constraints mapping, utilities awareness, soil observations, existing asset inventory, and early delivery notes.",
+      "keywords": ["site survey", "site assessment", "measurements", "constraints", "utilities", "existing assets", "early delivery notes"]
+    },
+    {
+      "id": "landscape-design",
+      "name": "Landscape Design",
+      "url": "https://www.desertscapeco.com/services/landscape-design",
+      "summary": "Concept, schematic, detailed, and construction stage landscape design for refined outdoor environments in Saudi Arabia.",
+      "keywords": ["landscape design", "concept design", "schematic design", "detailed design", "construction drawings", "planting palette", "outdoor environment"]
+    },
+    {
+      "id": "supply-procurement",
+      "name": "Supply and Procurement",
+      "url": "https://www.desertscapeco.com/services/supply-procurement",
+      "summary": "Procurement support for plants, palms, trees, hardscape, irrigation, lighting, furniture, play, sports, and specialist landscape components.",
+      "keywords": ["landscape supply", "procurement", "plants", "palms", "trees", "hardscape", "irrigation", "lighting", "outdoor furniture", "play equipment"]
+    },
+    {
+      "id": "landscape-construction",
+      "name": "Landscape Construction",
+      "url": "https://www.desertscapeco.com/services/landscape-construction",
+      "summary": "Construction execution for softscape, hardscape, irrigation, lighting, water features, civil works, infrastructure, and public realm assets.",
+      "keywords": ["landscape construction", "landscape contractor", "softscape", "hardscape", "irrigation installation", "lighting installation", "water features", "civil works"]
+    },
+    {
+      "id": "operations-maintenance",
+      "name": "Operation and Maintenance",
+      "url": "https://www.desertscapeco.com/services/operations-maintenance",
+      "summary": "Preventive and corrective maintenance plans that protect landscape value through routine care, reporting, and performance management.",
+      "keywords": ["landscape maintenance", "operation and maintenance", "preventive maintenance", "corrective maintenance", "routine care", "reporting", "performance management"]
+    }
+  ],
+  "focusedLandingPages": [
+    {
+      "id": "landscape-contractor-riyadh",
+      "name": "Landscape Contractor Riyadh",
+      "url": "https://www.desertscapeco.com/services/landscape-contractor-riyadh",
+      "keywords": ["landscape contractor riyadh", "landscaping company riyadh", "landscape company saudi arabia", "landscape construction riyadh"]
+    },
+    {
+      "id": "landscape-maintenance-riyadh",
+      "name": "Landscape Maintenance Riyadh",
+      "url": "https://www.desertscapeco.com/services/landscape-maintenance-riyadh",
+      "keywords": ["landscape maintenance riyadh", "garden maintenance riyadh", "irrigation maintenance", "compound landscape maintenance"]
+    },
+    {
+      "id": "irrigation-systems-riyadh",
+      "name": "Irrigation Systems Riyadh",
+      "url": "https://www.desertscapeco.com/services/irrigation-systems-riyadh",
+      "keywords": ["irrigation systems riyadh", "smart irrigation", "drip irrigation", "irrigation contractor", "irrigation maintenance"]
+    },
+    {
+      "id": "softscape-contractor-riyadh",
+      "name": "Softscape Contractor Riyadh",
+      "url": "https://www.desertscapeco.com/services/softscape-contractor-riyadh",
+      "keywords": ["softscape contractor riyadh", "planting contractor", "trees", "palms", "shrubs", "turf", "soil preparation"]
+    },
+    {
+      "id": "hardscape-contractor-riyadh",
+      "name": "Hardscape Contractor Riyadh",
+      "url": "https://www.desertscapeco.com/services/hardscape-contractor-riyadh",
+      "keywords": ["hardscape contractor riyadh", "paving", "stone", "concrete", "curbs", "walkways", "plazas"]
+    },
+    {
+      "id": "hospitality-landscape-contractor-saudi-arabia",
+      "name": "Hospitality Landscape Contractor Saudi Arabia",
+      "url": "https://www.desertscapeco.com/services/hospitality-landscape-contractor-saudi-arabia",
+      "keywords": ["hotel landscape contractor", "resort landscape contractor", "hospitality landscaping saudi arabia", "pool landscape", "courtyard landscape"]
+    },
+    {
+      "id": "residential-compound-landscaping-riyadh",
+      "name": "Residential Compound Landscaping Riyadh",
+      "url": "https://www.desertscapeco.com/services/residential-compound-landscaping-riyadh",
+      "keywords": ["residential compound landscaping", "compound landscape riyadh", "community outdoor areas", "private residential landscaping"]
+    },
+    {
+      "id": "public-realm-landscape-contractor-saudi-arabia",
+      "name": "Public Realm Landscape Contractor Saudi Arabia",
+      "url": "https://www.desertscapeco.com/services/public-realm-landscape-contractor-saudi-arabia",
+      "keywords": ["public realm landscape", "parks contractor", "plazas", "streetscape", "civic landscape", "open spaces"]
+    },
+    {
+      "id": "landscape-automation-iot-riyadh",
+      "name": "Landscape Automation and IoT Riyadh",
+      "url": "https://www.desertscapeco.com/services/landscape-automation-iot-riyadh",
+      "keywords": ["landscape automation", "landscape iot", "smart irrigation controller", "weather station", "sensors", "pump automation", "valve automation", "lighting controls", "BMS coordination"]
+    },
+    {
+      "id": "international-landscape-delivery-saudi-arabia",
+      "name": "International Landscape Delivery in Saudi Arabia",
+      "url": "https://www.desertscapeco.com/services/international-landscape-delivery-saudi-arabia",
+      "summary": "Saudi landscape delivery support for international companies, consultants, architects, contractors, and sports, production, and events companies.",
+      "keywords": ["landscape company saudi arabia", "saudi landscape delivery partner", "international landscape contractor saudi arabia", "fast-track landscape delivery", "landscape partner in saudi arabia"]
+    }
+  ]
+}

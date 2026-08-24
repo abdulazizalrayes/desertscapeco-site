@@ -1,0 +1,117 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://www.desertscapeco.com/",
+      "service-desc": [
+        {
+          "href": "https://www.desertscapeco.com/openapi.json",
+          "type": "application/vnd.oai.openapi+json",
+          "title": "DesertScape Discovery and Inquiry OpenAPI"
+        },
+        {
+          "href": "https://www.desertscapeco.com/.well-known/agent-card.json",
+          "type": "application/json",
+          "title": "DesertScape Agent Card"
+        },
+        {
+          "href": "https://www.desertscapeco.com/.well-known/mcp/server-card.json",
+          "type": "application/json",
+          "title": "DesertScape MCP Server Card"
+        },
+        {
+          "href": "https://www.desertscapeco.com/.well-known/mcp/server-cards.json",
+          "type": "application/json",
+          "title": "DesertScape MCP Server Cards"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://www.desertscapeco.com/llms.txt",
+          "type": "text/plain",
+          "title": "DesertScape LLM index"
+        },
+        {
+          "href": "https://www.desertscapeco.com/llms-full.txt",
+          "type": "text/plain",
+          "title": "DesertScape full LLM context"
+        },
+        {
+          "href": "https://www.desertscapeco.com/index.md",
+          "type": "text/markdown",
+          "title": "DesertScape markdown homepage"
+        },
+        {
+          "href": "https://www.desertscapeco.com/auth.md",
+          "type": "text/markdown",
+          "title": "DesertScape agent authentication guidance"
+        }
+      ],
+      "item": [
+        {
+          "href": "https://www.desertscapeco.com/data/company.json",
+          "type": "application/json",
+          "title": "Company entity data"
+        },
+        {
+          "href": "https://www.desertscapeco.com/data/services.json",
+          "type": "application/json",
+          "title": "Service data"
+        },
+        {
+          "href": "https://www.desertscapeco.com/data/capabilities.json",
+          "type": "application/json",
+          "title": "Capabilities, elements, and sectors"
+        },
+        {
+          "href": "https://www.desertscapeco.com/data/service-areas.json",
+          "type": "application/json",
+          "title": "Saudi service areas and international search use cases"
+        },
+        {
+          "href": "https://www.desertscapeco.com/data/project-inquiry-schema.json",
+          "type": "application/schema+json",
+          "title": "Project inquiry preparation schema"
+        },
+        {
+          "href": "https://www.desertscapeco.com/data/agent-routing.json",
+          "type": "application/json",
+          "title": "Agent routing rules"
+        },
+        {
+          "href": "https://www.desertscapeco.com/data/agent-analytics-dashboard.json",
+          "type": "application/json",
+          "title": "Agent analytics dashboard guidance"
+        }
+      ]
+    },
+    {
+      "anchor": "https://www.desertscapeco.com/api/inquiry",
+      "service-desc": [
+        {
+          "href": "https://www.desertscapeco.com/openapi.json",
+          "type": "application/vnd.oai.openapi+json",
+          "title": "DesertScape Website Inquiry OpenAPI"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://www.desertscapeco.com/contact",
+          "type": "text/html",
+          "title": "DesertScape Contact"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://www.desertscapeco.com/data/project-inquiry-schema.json",
+          "type": "application/schema+json",
+          "title": "Project inquiry schema"
+        },
+        {
+          "href": "https://www.desertscapeco.com/data/agent-routing.json",
+          "type": "application/json",
+          "title": "Agent routing rules"
+        }
+      ]
+    }
+  ]
+}

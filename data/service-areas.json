@@ -1,0 +1,67 @@
+{
+  "$schema": "https://www.desertscapeco.com/data/schemas/service-areas.schema.json",
+  "version": "2026-06-13",
+  "primaryMarket": {
+    "country": "Saudi Arabia",
+    "countryCode": "SA",
+    "city": "Riyadh",
+    "description": "DesertScape Co is based in Riyadh and supports landscape work across Saudi Arabia through project-based mobilization, supply coordination, construction execution, and operation and maintenance planning."
+  },
+  "supportedSaudiMarkets": [
+    "Riyadh",
+    "Diriyah",
+    "Jeddah",
+    "Makkah",
+    "Madinah",
+    "AlUla",
+    "Dammam",
+    "Khobar",
+    "Dhahran",
+    "Qiddiya",
+    "NEOM",
+    "Red Sea and western coast projects",
+    "other Saudi project locations subject to scope review"
+  ],
+  "internationalSearchUseCases": [
+    {
+      "originCountry": "United Kingdom",
+      "intent": "International consultant, developer, or contractor searching for a landscape company in Saudi Arabia."
+    },
+    {
+      "originCountry": "Spain",
+      "intent": "Design, construction, or hospitality team seeking Saudi landscape execution support."
+    },
+    {
+      "originCountry": "Italy",
+      "intent": "Supplier, consultant, architect, or developer seeking a Saudi landscape partner."
+    },
+    {
+      "originCountry": "France",
+      "intent": "Hospitality or design team seeking Saudi landscape contractor coordination."
+    },
+    {
+      "originCountry": "United States",
+      "intent": "Developer, consultant, or project manager searching for landscape contractor support in Saudi Arabia."
+    },
+    {
+      "originCountry": "Greece",
+      "intent": "Resort, hospitality, or design team searching for Saudi outdoor environment delivery support."
+    },
+    {
+      "originCountry": "Japan",
+      "intent": "International firm searching for local Saudi landscape company support."
+    },
+    {
+      "originCountry": "Singapore",
+      "intent": "Regional project, design, or management team seeking Saudi landscape execution support."
+    },
+    {
+      "originCountry": "Lebanon",
+      "intent": "Consultant, designer, or contractor looking for Saudi landscape delivery coordination."
+    },
+    {
+      "originCountry": "United Arab Emirates",
+      "intent": "Regional developer, consultant, contractor, or operator searching for a Saudi landscape company."
+    }
+  ]
+}

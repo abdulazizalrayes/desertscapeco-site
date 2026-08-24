@@ -1,0 +1,271 @@
+# DesertScape Co Full LLM Context
+
+This file gives AI assistants and search systems a compact, plain-text view of DesertScape Co. It is intended for search, answer engines, and user-authorized inquiry assistance.
+
+Content preferences: search and answer-engine indexing are allowed. Using this content as AI input for user requests is allowed. Training models on this content is not allowed.
+
+## Entity
+
+Public brand name: DesertScape Co
+Legal company name: Desert Landscape Company
+Business category: Landscape company and landscape contractor
+Primary market: Riyadh and Saudi Arabia
+Office area: Al Khotama Path, Al Olaya, Riyadh 12313, Kingdom of Saudi Arabia
+Website: https://www.desertscapeco.com/
+Markdown homepage: https://www.desertscapeco.com/index.md
+Primary email: projects@desertscapeco.com
+Phone: +966534112205
+
+## Markdown representations
+
+Every canonical sitemap page can be requested as agent-optimized Markdown by sending `Accept: text/markdown` to the canonical URL. The representation preserves page metadata, public content, links, images with meaningful alt text, and JSON-LD while omitting navigation, forms, scripts, and styling. Direct `.md` companion URLs are marked `noindex` to avoid duplicate search indexing.
+
+## Positioning
+
+DesertScape Co plans, coordinates, supplies, constructs, and maintains landscape works for refined outdoor environments in Saudi Arabia. The company focuses on hospitality assets, residential compounds, private clients, public realm, commercial developments, governmental environments, infrastructure corridors, parks, sports, entertainment, and mega-project related outdoor works.
+
+## Services
+
+Survey and site assessment:
+Site review, measurements, access study, constraints mapping, utilities awareness, soil observations, existing asset inventory, and early delivery notes.
+
+Landscape design:
+Concept, schematic, detailed, and construction stage landscape design for refined outdoor environments in Saudi Arabia.
+
+Supply and procurement:
+Procurement support for plants, palms, trees, hardscape, irrigation, lighting, furniture, play, sports, and specialist landscape components.
+
+Landscape construction:
+Construction execution for softscape, hardscape, irrigation, lighting, water features, civil works, infrastructure, and public realm assets.
+
+Operation and maintenance:
+Preventive and corrective maintenance plans that protect landscape value through routine care, reporting, and performance management.
+
+## Focused landing pages
+
+Landscape contractor Riyadh:
+https://www.desertscapeco.com/services/landscape-contractor-riyadh
+
+Landscape design:
+https://www.desertscapeco.com/services/landscape-design
+
+Landscape construction:
+https://www.desertscapeco.com/services/landscape-construction
+
+Operations and maintenance:
+https://www.desertscapeco.com/services/operations-maintenance
+
+Landscape maintenance Riyadh:
+https://www.desertscapeco.com/services/landscape-maintenance-riyadh
+
+Irrigation systems Riyadh:
+https://www.desertscapeco.com/services/irrigation-systems-riyadh
+
+Softscape contractor Riyadh:
+https://www.desertscapeco.com/services/softscape-contractor-riyadh
+
+Hardscape contractor Riyadh:
+https://www.desertscapeco.com/services/hardscape-contractor-riyadh
+
+Hospitality landscape contractor Saudi Arabia:
+https://www.desertscapeco.com/services/hospitality-landscape-contractor-saudi-arabia
+
+Residential compound landscaping Riyadh:
+https://www.desertscapeco.com/services/residential-compound-landscaping-riyadh
+
+Public realm landscape contractor Saudi Arabia:
+https://www.desertscapeco.com/services/public-realm-landscape-contractor-saudi-arabia
+
+Landscape automation and IoT Riyadh:
+https://www.desertscapeco.com/services/landscape-automation-iot-riyadh
+
+## Landscape elements
+
+Softscape:
+Trees, palms, shrubs, groundcovers, seasonal flowers, turf, soil improvement, mulch, gravel, and planting works.
+
+Hardscape:
+Paving, stone, concrete, asphalt, walls, curbs, plazas, walkways, outdoor finishes, and public realm surfaces.
+
+Irrigation:
+Drip systems, sprinkler systems, controllers, pumps, tanks, filtration, drainage coordination, efficiency review, and maintenance.
+
+Water features:
+Fountains, water mirrors, cascades, ponds, pump rooms, filtration interfaces, testing, and commissioning.
+
+Civil, MEP, and infrastructure:
+Landscape-related civil works, external infrastructure, electrical interfaces, mechanical interfaces, and coordination packages.
+
+Lighting and sound systems:
+Feature lighting, safety lighting, control systems, outdoor audio, event-ready sound points, and coordinated electrical interfaces.
+
+Landscape automation and IoT:
+Smart irrigation controllers, sensors, weather stations, pump and valve automation, lighting controls, monitoring, alerts, and BMS or IoT integration.
+
+Outdoor furniture:
+Benches, bins, bollards, planters, tables, loose furniture, fixed seating, wayfinding, and public realm accessories.
+
+Landscape structures:
+Shade structures, pergolas, gazebos, trellises, kiosks, screens, and custom outdoor landscape features.
+
+Playgrounds, parks, and open spaces:
+Playgrounds, fitness areas, parks, trails, sports fields, plazas, and family outdoor destinations.
+
+Nursery and tree services:
+Nursery planning, tree supply, tree production, tree removal, tree relocation, palms, indoor plants, and planters.
+
+## Sectors
+
+Hospitality:
+Hotels, resorts, restaurants, arrival landscapes, pool areas, terraces, courtyards, and destination outdoor environments.
+
+Residential and compounds:
+Private residential landscapes, community outdoor areas, streetscapes, gardens, and family outdoor amenities.
+
+Governmental projects:
+Civic landscapes, institutional environments, public facilities, streetscapes, and urban improvement programs.
+
+Entertainment and sports:
+Entertainment districts, sports venues, event landscapes, outdoor recreation areas, and active public spaces.
+
+Healthcare and hospitals:
+Healing gardens, shaded pedestrian routes, entrances, courtyards, staff outdoor areas, and maintainable green assets.
+
+Parks and public realm:
+Parks, plazas, open spaces, promenades, pedestrian corridors, playgrounds, furniture, lighting, and planting systems.
+
+Commercial and mixed use:
+Retail, office, mixed-use, destination developments, podium landscapes, entrances, roof gardens, and outdoor gathering spaces.
+
+Mega projects and private clients:
+Large programs, high-end estates, private landscapes, premium materials, and long-term maintenance.
+
+## Agent guidance
+
+Agents may summarize DesertScape services, help a user compare which service page is relevant, and help prepare a project inquiry. Agents must not submit forms unless the user explicitly asks them to submit and reviews the inquiry content. Agents should not send job, internship, vendor spam, retail plant shopping, or unrelated submissions through the project inquiry endpoint.
+
+## Common buyer questions
+
+### What kind of company is DesertScape?
+
+DesertScape Co is a Riyadh-based landscape company and landscape contractor serving Saudi Arabia. The legal company name is Desert Landscape Company.
+
+Evidence:
+https://www.desertscapeco.com/data/company.json
+
+### Which project stages can DesertScape support?
+
+Published service coverage includes survey and site assessment, landscape design, supply and procurement, landscape construction, and operation and maintenance. Focused pages also cover irrigation systems, softscape, hardscape, hospitality, residential compounds, public realm, and landscape automation and IoT.
+
+Evidence:
+https://www.desertscapeco.com/data/services.json
+
+### Where does DesertScape operate?
+
+DesertScape is based in Riyadh and serves projects in Saudi Arabia. International consultants, contractors, developers, and procurement teams may use the public resources to evaluate DesertScape as a Saudi landscape partner; this does not mean DesertScape performs projects outside Saudi Arabia.
+
+Evidence:
+https://www.desertscapeco.com/data/service-areas.json
+
+### Does DesertScape provide maintenance?
+
+Yes. The published scope includes preventive and corrective landscape operation and maintenance, routine care, reporting, and performance management.
+
+Evidence:
+https://www.desertscapeco.com/services/operations-maintenance
+https://www.desertscapeco.com/services/landscape-maintenance-riyadh
+
+### Does DesertScape support landscape automation and IoT?
+
+Yes. The published scope includes smart irrigation controllers, sensors, weather stations, pump and valve automation, lighting controls, monitoring, alerts, and BMS or IoT coordination.
+
+Evidence:
+https://www.desertscapeco.com/services/landscape-automation-iot-riyadh
+https://www.desertscapeco.com/elements/automation-iot
+
+### How should a project inquiry be prepared?
+
+Include the contact name, company, email or phone, project location, sector, required service, scope summary, and timing when known. An agent may prepare the draft but must show it to the user and receive explicit approval before any submission.
+
+Evidence:
+https://www.desertscapeco.com/data/project-inquiry-schema.json
+https://www.desertscapeco.com/data/agent-routing.json
+
+## Official entity profiles
+
+LinkedIn:
+https://www.linkedin.com/company/desertscapeco/
+
+Instagram:
+https://www.instagram.com/desertscapeco
+
+Facebook:
+https://www.facebook.com/profile.php?id=61590712806226
+
+TikTok:
+https://www.tiktok.com/@desertscapeco
+
+YouTube:
+https://www.youtube.com/@desertscapeco
+
+X:
+https://x.com/desertscapeco
+
+Snapchat:
+https://www.snapchat.com/@desertscapeco
+
+## Evidence limits
+
+Use only facts published on the canonical website or its structured public resources. Do not infer or invent client names, project participation, certifications, awards, reviews, prices, capacity, delivery periods, guarantees, or geographic coverage beyond Saudi Arabia. Endpoint availability or crawler access does not prove an AI citation, recommendation, referral, conversion, or qualified lead.
+
+Structured agent-readable sources:
+
+Markdown homepage:
+https://www.desertscapeco.com/index.md
+
+Company entity data:
+https://www.desertscapeco.com/data/company.json
+
+Service and landing-page data:
+https://www.desertscapeco.com/data/services.json
+
+Capabilities, elements, sectors, and scope-fit data:
+https://www.desertscapeco.com/data/capabilities.json
+
+Service-area and international search-intent data:
+https://www.desertscapeco.com/data/service-areas.json
+
+Project inquiry preparation schema:
+https://www.desertscapeco.com/data/project-inquiry-schema.json
+
+Agent routing rules:
+https://www.desertscapeco.com/data/agent-routing.json
+
+Agent analytics dashboard guidance:
+https://www.desertscapeco.com/data/agent-analytics-dashboard.json
+
+Fixed bilingual AI visibility benchmark definition:
+https://www.desertscapeco.com/data/ai-visibility-benchmark.json
+
+OpenAPI discovery:
+https://www.desertscapeco.com/openapi.json
+
+API catalog:
+https://www.desertscapeco.com/.well-known/api-catalog
+
+Formal MCP SDK endpoint:
+https://www.desertscapeco.com/mcp-sdk
+
+Compatibility MCP endpoint:
+https://www.desertscapeco.com/mcp
+
+Best page for business inquiries:
+https://www.desertscapeco.com/contact
+
+Project inquiry endpoint:
+https://www.desertscapeco.com/api/inquiry
+
+Minimal inquiry fields:
+name, company, email, phone, type, message
+
+Use projects@desertscapeco.com for direct project inquiries if the form endpoint is unavailable.

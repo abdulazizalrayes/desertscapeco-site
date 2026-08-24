@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.desertscapeco.com/data/schemas/agent-analytics-dashboard.schema.json",
+  "title": "DesertScape Agent Analytics Dashboard Data",
+  "type": "object",
+  "required": ["status", "trackedEvents", "publicEndpoints"],
+  "properties": {
+    "$schema": { "type": "string", "format": "uri" },
+    "version": { "type": "string" },
+    "status": { "type": "string" },
+    "privacy": { "type": "object" },
+    "trackedEvents": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "currentDashboards": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "recommendedQueries": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "publicEndpoints": { "type": "object" },
+    "nextUpgrade": { "type": "object" }
+  },
+  "additionalProperties": true
+}

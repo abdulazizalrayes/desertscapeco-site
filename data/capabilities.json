@@ -1,0 +1,143 @@
+{
+  "$schema": "https://www.desertscapeco.com/data/schemas/capabilities.schema.json",
+  "version": "2026-06-13",
+  "elements": [
+    {
+      "id": "softscape",
+      "name": "Softscape",
+      "url": "https://www.desertscapeco.com/elements/softscape",
+      "scope": ["trees", "palms", "shrubs", "groundcovers", "seasonal flowers", "turf", "soil improvement", "mulch", "gravel", "planting works"]
+    },
+    {
+      "id": "hardscape",
+      "name": "Hardscape",
+      "url": "https://www.desertscapeco.com/elements/hardscape",
+      "scope": ["paving", "stone", "concrete", "asphalt", "walls", "curbs", "plazas", "walkways", "outdoor finishes", "public realm surfaces"]
+    },
+    {
+      "id": "irrigation",
+      "name": "Irrigation",
+      "url": "https://www.desertscapeco.com/elements/irrigation",
+      "scope": ["drip systems", "sprinkler systems", "controllers", "pumps", "tanks", "filtration", "drainage coordination", "efficiency review", "maintenance"]
+    },
+    {
+      "id": "water-features",
+      "name": "Water Features",
+      "url": "https://www.desertscapeco.com/elements/water-features",
+      "scope": ["fountains", "water mirrors", "cascades", "ponds", "pump rooms", "filtration interfaces", "testing", "commissioning"]
+    },
+    {
+      "id": "civil-mep-infrastructure",
+      "name": "Civil, MEP, and Infrastructure",
+      "url": "https://www.desertscapeco.com/elements/civil-mep-infrastructure",
+      "scope": ["landscape civil works", "external infrastructure", "electrical interfaces", "mechanical interfaces", "coordination packages"]
+    },
+    {
+      "id": "lighting-sound-systems",
+      "name": "Lighting and Sound Systems",
+      "url": "https://www.desertscapeco.com/elements/lighting-sound-systems",
+      "scope": ["feature lighting", "safety lighting", "control systems", "outdoor audio", "event-ready sound points", "electrical interfaces"]
+    },
+    {
+      "id": "automation-iot",
+      "name": "Landscape Automation and IoT",
+      "url": "https://www.desertscapeco.com/elements/automation-iot",
+      "scope": ["smart irrigation controllers", "sensors", "weather stations", "pump automation", "valve automation", "lighting controls", "monitoring", "alerts", "BMS integration", "IoT integration"]
+    },
+    {
+      "id": "outdoor-furniture",
+      "name": "Outdoor Furniture",
+      "url": "https://www.desertscapeco.com/elements/outdoor-furniture",
+      "scope": ["benches", "bins", "bollards", "planters", "tables", "loose furniture", "fixed seating", "wayfinding", "public realm accessories"]
+    },
+    {
+      "id": "landscape-structures",
+      "name": "Landscape Structures",
+      "url": "https://www.desertscapeco.com/elements/landscape-structures",
+      "scope": ["shade structures", "pergolas", "gazebos", "trellises", "kiosks", "screens", "custom outdoor landscape features"]
+    },
+    {
+      "id": "playgrounds-parks-open-spaces",
+      "name": "Playgrounds, Parks, and Open Spaces",
+      "url": "https://www.desertscapeco.com/elements/playgrounds-parks-open-spaces",
+      "scope": ["playgrounds", "fitness areas", "parks", "trails", "sports fields", "plazas", "family outdoor destinations"]
+    },
+    {
+      "id": "nursery-tree-services",
+      "name": "Nursery and Tree Services",
+      "url": "https://www.desertscapeco.com/elements/nursery-tree-services",
+      "scope": ["nursery planning", "tree supply", "tree production", "tree removal", "tree relocation", "palms", "indoor plants", "planters"]
+    }
+  ],
+  "sectors": [
+    {
+      "id": "hospitality",
+      "name": "Hospitality",
+      "url": "https://www.desertscapeco.com/sectors/hospitality",
+      "scope": ["hotels", "resorts", "restaurants", "arrival landscapes", "pool areas", "terraces", "courtyards", "destination outdoor environments"]
+    },
+    {
+      "id": "residential-compounds",
+      "name": "Residential and Compounds",
+      "url": "https://www.desertscapeco.com/sectors/residential-compounds",
+      "scope": ["private residential landscapes", "community outdoor areas", "streetscapes", "gardens", "family outdoor amenities"]
+    },
+    {
+      "id": "governmental-projects",
+      "name": "Governmental Projects",
+      "url": "https://www.desertscapeco.com/sectors/governmental-projects",
+      "scope": ["civic landscapes", "institutional environments", "public facilities", "streetscapes", "urban improvement programs"]
+    },
+    {
+      "id": "entertainment-sports",
+      "name": "Entertainment and Sports",
+      "url": "https://www.desertscapeco.com/sectors/entertainment-sports",
+      "scope": ["entertainment districts", "sports venues", "event landscapes", "outdoor recreation areas", "active public spaces"]
+    },
+    {
+      "id": "healthcare-hospitals",
+      "name": "Healthcare and Hospitals",
+      "url": "https://www.desertscapeco.com/sectors/healthcare-hospitals",
+      "scope": ["healing gardens", "shaded pedestrian routes", "entrances", "courtyards", "staff outdoor areas", "maintainable green assets"]
+    },
+    {
+      "id": "parks-public-realm",
+      "name": "Parks and Public Realm",
+      "url": "https://www.desertscapeco.com/sectors/parks-public-realm",
+      "scope": ["parks", "plazas", "open spaces", "promenades", "pedestrian corridors", "playgrounds", "furniture", "lighting", "planting systems"]
+    },
+    {
+      "id": "commercial-mixed-use",
+      "name": "Commercial and Mixed Use",
+      "url": "https://www.desertscapeco.com/sectors/commercial-mixed-use",
+      "scope": ["retail", "office", "mixed-use", "destination developments", "podium landscapes", "entrances", "roof gardens", "outdoor gathering spaces"]
+    },
+    {
+      "id": "mega-projects-private-clients",
+      "name": "Mega Projects and Private Clients",
+      "url": "https://www.desertscapeco.com/sectors/mega-projects-private-clients",
+      "scope": ["large programs", "high-end estates", "private landscapes", "premium materials", "long-term maintenance"]
+    }
+  ],
+  "clientTypes": [
+    "owners",
+    "developers",
+    "consultants",
+    "contractors",
+    "government teams",
+    "hospitality operators",
+    "compound operators",
+    "private clients",
+    "international firms seeking Saudi landscape partners"
+  ],
+  "notPrimaryFit": [
+    "free design work",
+    "small retail plant shopping",
+    "job applications through project inquiry",
+    "employment or recruitment requests through project inquiry",
+    "internship requests through project inquiry",
+    "training requests through project inquiry",
+    "vendor onboarding through project inquiry",
+    "unsolicited supplier messages through project inquiry"
+  ]
+}

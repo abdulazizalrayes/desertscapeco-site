@@ -1,0 +1,15 @@
+paperclip-package/
+desertscape-paperclip-package.zip
+.vercel/
+.DS_Store
+.vercel
+assets/brand/
+company-profile/
+scripts/build-company-profile.mjs
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example

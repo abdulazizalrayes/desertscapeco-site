@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.desertscapeco.com/data/schemas/agent-routing.schema.json",
+  "title": "DesertScape Agent Routing Data",
+  "type": "object",
+  "required": ["routeProjectInquiryTo", "routeCareersTo", "routeVendorsTo", "routeGeneralResearchTo"],
+  "properties": {
+    "$schema": { "type": "string", "format": "uri" },
+    "version": { "type": "string" },
+    "routeProjectInquiryTo": { "$ref": "#/$defs/route" },
+    "routeCareersTo": { "$ref": "#/$defs/pageRoute" },
+    "routeVendorsTo": { "$ref": "#/$defs/pageRoute" },
+    "routeGeneralResearchTo": { "type": "object" },
+    "rejectOrRedirect": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "$defs": {
+    "route": {
+      "type": "object",
+      "properties": {
+        "page": { "type": "string", "format": "uri" },
+        "endpoint": { "type": "string", "format": "uri" },
+        "method": { "type": "string" },
+        "requiresExplicitUserApproval": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    },
+    "pageRoute": {
+      "type": "object",
+      "properties": {
+        "page": { "type": "string", "format": "uri" },
+        "doNotUseProjectInquiry": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

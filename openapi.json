@@ -1,0 +1,265 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "DesertScape Website Inquiry and Discovery API",
+    "version": "2026-06-13",
+    "description": "Public discovery and user-authorized inquiry interface for DesertScape Co. Agents may read public data endpoints and prepare project inquiries, but must get explicit user approval before submitting any form."
+  },
+  "servers": [
+    {
+      "url": "https://www.desertscapeco.com"
+    }
+  ],
+  "paths": {
+    "/data/company.json": {
+      "get": {
+        "operationId": "getDesertScapeCompany",
+        "summary": "Get DesertScape company entity data",
+        "description": "Returns public brand, legal, contact, service-area, language, and agent-use guidance for DesertScape Co.",
+        "responses": {
+          "200": {
+            "description": "Company data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/services.json": {
+      "get": {
+        "operationId": "getDesertScapeServices",
+        "summary": "Get DesertScape service pages and keywords",
+        "description": "Returns core service groups and focused service landing pages with summaries, URLs, and scope keywords.",
+        "responses": {
+          "200": {
+            "description": "Service data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/capabilities.json": {
+      "get": {
+        "operationId": "getDesertScapeCapabilities",
+        "summary": "Get DesertScape elements, sectors, and fit rules",
+        "description": "Returns landscape elements, sectors, client types, and non-fit routing notes for agent scope matching.",
+        "responses": {
+          "200": {
+            "description": "Capability data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/service-areas.json": {
+      "get": {
+        "operationId": "getDesertScapeServiceAreas",
+        "summary": "Get DesertScape Saudi and international search service-area data",
+        "description": "Returns primary Saudi market and international search use cases for firms seeking landscape companies in Saudi Arabia.",
+        "responses": {
+          "200": {
+            "description": "Service area data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/project-inquiry-schema.json": {
+      "get": {
+        "operationId": "getDesertScapeProjectInquirySchema",
+        "summary": "Get project inquiry preparation schema",
+        "description": "Returns the schema agents should use to prepare a DesertScape project inquiry draft before user approval.",
+        "responses": {
+          "200": {
+            "description": "Project inquiry schema",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/agent-routing.json": {
+      "get": {
+        "operationId": "getDesertScapeAgentRouting",
+        "summary": "Get agent routing rules",
+        "description": "Returns routing rules for project inquiries, careers, vendors, public research, and irrelevant submissions.",
+        "responses": {
+          "200": {
+            "description": "Agent routing data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/agent-analytics-dashboard.json": {
+      "get": {
+        "operationId": "getDesertScapeAgentAnalyticsDashboard",
+        "summary": "Get DesertScape agent analytics dashboard guidance",
+        "description": "Returns privacy-safe monitoring guidance for AI crawler, MCP, and agent interactions logged through Cloudflare Workers Observability.",
+        "responses": {
+          "200": {
+            "description": "Agent analytics dashboard guidance",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/inquiry": {
+      "post": {
+        "operationId": "submitWebsiteInquiry",
+        "summary": "Submit a DesertScape website inquiry",
+        "description": "Submit a user-authorized inquiry to DesertScape Co. Agents must get explicit user approval before sending. Use _subject=project_inquiry only for legitimate client project inquiries.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "_subject": {
+                    "type": "string",
+                    "description": "Form category. Use project_inquiry for client project inquiries."
+                  },
+                  "_page": {
+                    "type": "string",
+                    "description": "Submitting page URL."
+                  },
+                  "_language": {
+                    "type": "string",
+                    "description": "Page language code."
+                  },
+                  "name": {
+                    "type": "string",
+                    "maxLength": 120
+                  },
+                  "company": {
+                    "type": "string",
+                    "maxLength": 160
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": "email",
+                    "maxLength": 160
+                  },
+                  "phone": {
+                    "type": "string",
+                    "maxLength": 80
+                  },
+                  "type": {
+                    "type": "string",
+                    "maxLength": 80,
+                    "description": "Project type or inquiry category."
+                  },
+                  "message": {
+                    "type": "string",
+                    "maxLength": 3000
+                  },
+                  "website": {
+                    "type": "string",
+                    "description": "Honeypot field. Leave empty."
+                  }
+                },
+                "required": [
+                  "name",
+                  "email",
+                  "message"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Inquiry accepted",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "ok"
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid or empty submission"
+          },
+          "403": {
+            "description": "Origin not allowed"
+          },
+          "429": {
+            "description": "Rate limited"
+          },
+          "502": {
+            "description": "Email delivery failed"
+          }
+        }
+      }
+    },
+    "/index.md": {
+      "get": {
+        "operationId": "getDesertScapeMarkdownHomepage",
+        "summary": "Get DesertScape markdown homepage",
+        "description": "Returns a compact markdown homepage for AI assistants, answer engines, and CLI/API users.",
+        "responses": {
+          "200": {
+            "description": "Markdown homepage",
+            "content": {
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

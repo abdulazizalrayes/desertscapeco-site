@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.desertscapeco.com/data/project-inquiry-schema.json",
+  "title": "DesertScape Project Inquiry Draft",
+  "description": "Agent-readable schema for preparing a DesertScape Co project inquiry. Agents must show the final draft to the user and get explicit user approval before submitting to /api/inquiry.",
+  "type": "object",
+  "required": ["contact", "project", "consent"],
+  "properties": {
+    "contact": {
+      "type": "object",
+      "required": ["name", "email"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "maxLength": 120
+        },
+        "company": {
+          "type": "string",
+          "maxLength": 160
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "maxLength": 160
+        },
+        "phone": {
+          "type": "string",
+          "maxLength": 80
+        }
+      },
+      "additionalProperties": false
+    },
+    "project": {
+      "type": "object",
+      "required": ["location", "scopeSummary"],
+      "properties": {
+        "location": {
+          "type": "string",
+          "maxLength": 180
+        },
+        "sector": {
+          "type": "string",
+          "maxLength": 120,
+          "examples": ["hospitality", "residential compound", "public realm", "commercial", "governmental", "private client"]
+        },
+        "serviceNeed": {
+          "type": "string",
+          "maxLength": 120,
+          "examples": ["landscape design", "landscape construction", "operation and maintenance", "irrigation", "automation and IoT"]
+        },
+        "scopeSummary": {
+          "type": "string",
+          "maxLength": 1200
+        },
+        "timing": {
+          "type": "string",
+          "maxLength": 180
+        },
+        "procurementOrTenderNotes": {
+          "type": "string",
+          "maxLength": 500
+        }
+      },
+      "additionalProperties": false
+    },
+    "consent": {
+      "type": "object",
+      "required": ["userApprovedSubmission"],
+      "properties": {
+        "userApprovedSubmission": {
+          "type": "boolean",
+          "const": true,
+          "description": "Must be true only after the user reviews and explicitly approves the final inquiry content."
+        },
+        "approvalNote": {
+          "type": "string",
+          "maxLength": 240
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "formEncoding": {
+    "method": "POST",
+    "action": "https://www.desertscapeco.com/api/inquiry",
+    "contentType": "multipart/form-data",
+    "fields": {
+      "_subject": "project_inquiry",
+      "_language": "en",
+      "website": ""
+    }
+  }
+}

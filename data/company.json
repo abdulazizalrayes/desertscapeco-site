@@ -1,0 +1,119 @@
+{
+  "$schema": "https://www.desertscapeco.com/data/schemas/company.schema.json",
+  "version": "2026-08-20",
+  "dateModified": "2026-08-20",
+  "lastVerified": "2026-08-20",
+  "provenance": {
+    "publisher": "DesertScape Co",
+    "sourceUrl": "https://www.desertscapeco.com/data/company.json",
+    "accountOwner": "projects@desertscapeco.com",
+    "status": "owner-maintained public company information",
+    "scope": "Company identity, public contact channels, service area, verified Google Business Profile data, official social profiles, and agent-use policy."
+  },
+  "brandName": "DesertScape Co",
+  "legalName": "Desert Landscape Company",
+  "publicIdentifiers": {
+    "duns": "986468578"
+  },
+  "description": "DesertScape Company delivers integrated landscape services across Saudi Arabia, from landscape architecture design, supply, construction, operation and maintenance. Our work covers hardscape, softscape, irrigation, water features, site furniture, landscape lighting, lightweight structures, sports and recreational landscapes, playgrounds, nursery works,  plant and tree supply. We also deliver the associated civil, MEP, and infrastructure works needed for coordinated execution. We support developers, consultants, contractors, government entities, and private clients, including fast track and time sensitive projects, with a focus on quality, safety, and long term performance.",
+  "url": "https://www.desertscapeco.com/",
+  "contact": {
+    "email": "projects@desertscapeco.com",
+    "telephone": "+966534112205",
+    "contactPage": "https://www.desertscapeco.com/contact",
+    "projectInquiryEndpoint": "https://www.desertscapeco.com/api/inquiry"
+  },
+  "address": {
+    "streetAddress": "Al Khotama Path",
+    "district": "Al Olaya",
+    "addressLocality": "Riyadh",
+    "postalCode": "12313",
+    "addressCountry": "SA"
+  },
+  "googleBusinessProfile": {
+    "name": "DesertScape Company",
+    "category": "Landscaper",
+    "address": {
+      "streetAddress": "Al Khotama Path",
+      "district": "Al Olaya",
+      "addressLocality": "Riyadh",
+      "postalCode": "12313",
+      "addressCountry": "SA"
+    },
+    "telephone": "+966534112205",
+    "plusCode": "MMRF+VV Al Olaya, Riyadh",
+    "geo": {
+      "latitude": 24.6921602,
+      "longitude": 46.6746508
+    },
+    "hasMap": "https://www.google.com/maps/place/DesertScape+Company/@24.6921602,46.6746508,1010m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e2f0339c23c86c7:0xf970ca03fda7aa07!8m2!3d24.6921602!4d46.6746508!16s%2Fg%2F11nqlt6mw7",
+    "verifiedOn": "2026-06-23",
+    "source": "Google Maps listing managed under projects@desertscapeco.com"
+  },
+  "areaServed": [
+    "Riyadh",
+    "Saudi Arabia"
+  ],
+  "internationalSearchIntentSupported": [
+    "United Kingdom",
+    "Spain",
+    "Italy",
+    "France",
+    "United States",
+    "Greece",
+    "Japan",
+    "Singapore",
+    "Lebanon",
+    "United Arab Emirates"
+  ],
+  "languages": [
+    "en",
+    "ar",
+    "fr",
+    "it",
+    "es",
+    "ru",
+    "ja",
+    "ko",
+    "th",
+    "zh-CN"
+  ],
+  "sameAs": [
+    "https://www.tiktok.com/@desertscapeco",
+    "https://www.snapchat.com/@desertscapeco",
+    "https://www.instagram.com/desertscapeco",
+    "https://www.facebook.com/profile.php?id=61590712806226",
+    "https://www.linkedin.com/company/desertscapeco/",
+    "https://www.youtube.com/@desertscapeco",
+    "https://x.com/desertscapeco"
+  ],
+  "agentUse": {
+    "publicRead": true,
+    "prepareProjectInquiry": true,
+    "submitProjectInquiry": "only after explicit user approval",
+    "doNotSubmitThroughProjectInquiry": [
+      "career applications",
+      "employment requests",
+      "recruitment requests",
+      "internships",
+      "training requests",
+      "vendor spam",
+      "supplier registrations",
+      "vendor onboarding",
+      "unsolicited supplier outreach",
+      "retail plant shopping",
+      "unrelated messages"
+    ]
+  },
+  "primaryPages": {
+    "home": "https://www.desertscapeco.com/",
+    "about": "https://www.desertscapeco.com/about",
+    "services": "https://www.desertscapeco.com/services",
+    "elements": "https://www.desertscapeco.com/elements",
+    "sectors": "https://www.desertscapeco.com/sectors",
+    "projects": "https://www.desertscapeco.com/projects",
+    "vendors": "https://www.desertscapeco.com/vendors",
+    "careers": "https://www.desertscapeco.com/careers",
+    "contact": "https://www.desertscapeco.com/contact"
+  }
+}
