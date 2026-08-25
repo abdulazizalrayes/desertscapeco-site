@@ -1,46 +1,157 @@
 {
   "$schema": "https://www.desertscapeco.com/data/schemas/agent-analytics-dashboard.schema.json",
-  "version": "2026-06-13",
-  "status": "enabled-through-cloudflare-worker-observability",
+  "version": "2026-08-25",
+  "dateModified": "2026-08-25",
+  "lastVerified": "2026-08-25",
+  "status": "enabled-through-cloudflare-workers-analytics-engine",
+  "provenance": {
+    "publisher": "DesertScape Co",
+    "sourceUrl": "https://www.desertscapeco.com/data/agent-analytics-dashboard.json",
+    "accountOwner": "projects@desertscapeco.com",
+    "status": "owner-maintained analytics contract",
+    "scope": "Privacy-safe agent endpoint telemetry, synthetic-test separation, AI-referral attribution, and reporting rules."
+  },
   "privacy": {
     "storesPersonalData": false,
-    "notes": "The public agent layer logs event type, path, method, user agent, Cloudflare country/colo when available, and tool/resource names. It does not log inquiry body content or private credentials."
+    "notes": "Durable agent analytics stores event type, service, path, method, normalized crawler family, traffic class, synthetic monitor source, Cloudflare country/colo when available, and tool/resource names. It does not store inquiry body content, names, email addresses, phone numbers, IP addresses, raw user-agent strings, credentials, or secrets."
+  },
+  "dataContract": {
+    "blob1": "event",
+    "blob2": "worker_service",
+    "blob3": "public_path",
+    "blob4": "http_method",
+    "blob5": "crawler_family",
+    "blob6": "country_code",
+    "blob7": "cloudflare_colo",
+    "blob8": "tool_name",
+    "blob9": "resource_name",
+    "blob10": "traffic_class",
+    "blob11": "synthetic_source",
+    "double1": "event_count",
+    "index1": "event_name"
+  },
+  "trafficClasses": {
+    "synthetic": "DesertScape validation, monitoring, smoke tests, or readiness checks. Exclude from organic KPIs.",
+    "recognized-crawler": "A normalized public crawler or AI retrieval user agent.",
+    "human-or-unknown": "A request that is neither a DesertScape monitor nor a recognized crawler.",
+    "legacy-unclassified": "Events written before the 2026-07-21 traffic-class cutover. Report separately and never relabel as organic."
   },
   "trackedEvents": [
     "agent_resource_read",
     "data_resource_read",
+    "markdown_representation_read",
     "mcp_request",
     "mcp_tool_call",
     "mcp_resource_read",
     "openapi_read",
     "llms_read",
+    "llms_full_read",
     "agent_card_read",
-    "inquiry_prepare"
+    "inquiry_prepare",
+    "inquiry_submission_accepted",
+    "turnstile_rejected"
   ],
+  "organicDashboard": {
+    "primaryFilter": "blob10 IN ('recognized-crawler', 'human-or-unknown')",
+    "excludeFilter": "blob10 = 'synthetic'",
+    "legacyPolicy": "Rows with empty blob10 predate the cutover and must appear only as legacy-unclassified.",
+    "kpis": [
+      "organic endpoint reads",
+      "recognized AI/search crawler reads",
+      "organic Markdown representation reads",
+      "organic MCP requests and tool calls",
+      "organic inquiry preparation events",
+      "GA4 AI referral sessions",
+      "AI-attributed phone, WhatsApp, form, and qualified-lead events"
+    ]
+  },
+  "aiReferralAttribution": {
+    "ga4PropertyId": "539407172",
+    "sessionEvent": "ai_referral_session",
+    "leadEventsEnriched": [
+      "phone_lead_click",
+      "whatsapp_lead_click",
+      "email_lead_click",
+      "form_submit",
+      "qualify_lead"
+    ],
+    "registeredCustomDimensions": [
+      "ai_platform",
+      "ai_referral_host",
+      "ai_landing_path",
+      "traffic_source_class"
+    ],
+    "rawParameters": ["ai_referral"],
+    "customDimensionsRegisteredOn": "2026-07-21",
+    "customDimensionsRegisteredIn": "GA4 property 539407172 under projects@desertscapeco.com",
+    "recognizedPlatforms": [
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "gemini",
+      "microsoft-copilot"
+    ],
+    "privacy": "Session-scoped attribution only. No personal information is added."
+  },
+  "monthlyBenchmark": {
+    "definition": "https://www.desertscapeco.com/data/ai-visibility-benchmark.json",
+    "promptCount": 50,
+    "languages": ["en", "ar"],
+    "platforms": ["ChatGPT", "Claude", "Perplexity", "Gemini", "Microsoft Copilot", "Google AI Mode"],
+    "cadence": "monthly",
+    "measures": ["mention", "citation", "recommendation position", "source URL", "competitors mentioned", "answer accuracy"]
+  },
+  "latestEvidence": {
+    "window": "rolling-28-days",
+    "queriedOn": "2026-08-25",
+    "firstEventUtc": "2026-07-28 09:50:13",
+    "lastEventUtc": "2026-08-25 08:29:59",
+    "weightedEvents": 2671,
+    "recognizedCrawlerReads": 914,
+    "recognizedCrawlerFamilies": {
+      "googlebot": 314,
+      "claudebot": 198,
+      "claude-searchbot": 167,
+      "oai-searchbot": 127,
+      "applebot": 45,
+      "bingbot": 45,
+      "perplexitybot": 17,
+      "claude-user": 2
+    },
+    "humanOrUnknownAgentResourceReads": 1180,
+    "humanOrUnknownMarkdownReads": 22,
+    "humanOrUnknownMcpRequests": 10,
+    "organicMcpToolCalls": 0,
+    "organicMcpResourceReads": 0,
+    "interpretation": "This snapshot proves endpoint retrieval and recognized crawler activity. It does not prove an AI citation, recommendation, referral, conversion, or qualified lead. Synthetic monitoring is excluded from the organic figures."
+  },
   "currentDashboards": [
     {
-      "name": "Cloudflare Workers Observability",
-      "scope": "desertscape-form-worker and desertscape-mcp-worker structured logs",
+      "name": "Cloudflare Workers Analytics Engine",
+      "scope": "Organic-only and synthetic-separated desertscape_agent_analytics aggregates",
       "account": "projects@desertscapeco.com"
+    },
+    {
+      "name": "GA4 AI Referral and Lead Attribution",
+      "scope": "AI referral sessions and AI-attributed phone, WhatsApp, email, form, and qualified inquiry events",
+      "account": "projects@desertscapeco.com",
+      "propertyId": "539407172"
     }
   ],
   "recommendedQueries": [
-    "Filter logs where service is desertscape-form-worker or desertscape-mcp-worker.",
-    "Group by event to compare llms.txt reads, OpenAPI reads, MCP requests, and MCP tool calls.",
-    "Group by userAgent to identify Googlebot, Bingbot, GPTBot, OAI-SearchBot, ChatGPT-User, PerplexityBot, ClaudeBot, and other AI/search crawlers.",
-    "Group by country to identify international agent or search interest.",
-    "Inspect mcp_tool_call events for match_desertscape_project_scope, match_project_scope, prepare_desertscape_project_inquiry, and prepare_project_inquiry."
+    "Use blob10 to exclude synthetic events from every organic KPI.",
+    "Report empty blob10 rows as legacy-unclassified; do not infer that they were organic.",
+    "Group recognized-crawler rows by blob5 and blob1 to measure real crawler retrieval behavior.",
+    "Group organic mcp_tool_call and inquiry_prepare rows by blob8 to measure agent engagement.",
+    "Report synthetic rows by blob11 to monitor test coverage without mixing them into growth metrics.",
+    "Join interpretation, not user identity, across Cloudflare endpoint events and GA4 AI-referral conversions."
   ],
+  "queryDocumentation": "docs/CLOUDFLARE_AGENT_ANALYTICS.md",
   "publicEndpoints": {
     "mcpCompatibility": "https://www.desertscapeco.com/mcp",
     "mcpSdk": "https://www.desertscapeco.com/mcp-sdk",
     "llms": "https://www.desertscapeco.com/llms.txt",
     "openapi": "https://www.desertscapeco.com/openapi.json",
     "agentCard": "https://www.desertscapeco.com/.well-known/agent-card.json"
-  },
-  "nextUpgrade": {
-    "name": "Cloudflare Analytics Engine or Logpush dashboard",
-    "requires": "A dedicated analytics binding or Logpush destination approved in Cloudflare.",
-    "reason": "Worker logs are enough for monitoring and debugging. A true aggregate dashboard needs a durable analytics sink."
   }
 }
