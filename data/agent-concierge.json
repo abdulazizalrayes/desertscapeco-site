@@ -23,7 +23,7 @@
     "maxQuestionLength": 600,
     "answerSources": "Only owner-verified public DesertScape resources bundled with the Worker",
     "contactRule": "The concierge may prepare or recommend a project inquiry, but submission requires explicit user approval.",
-    "privacy": "The public analytics dataset never stores question text. A separate private Cloudflare Analytics Engine dataset may retain a redacted safe question excerpt for up to three months so DesertScape can improve unanswered topics. Questions containing contact details, credential-like data, or other sensitive patterns are not retained as text.",
+    "privacy": "The public analytics dataset never stores question text. A separate private Cloudflare Analytics Engine dataset may retain sanitized legitimate answered and unanswered question text for up to three months so DesertScape can improve its public answers. Declared names, identifiers, and URLs are redacted. Questions containing contact details, credential-like data, prompt injection, or other sensitive patterns, as well as synthetic monitoring questions, are not retained as text.",
     "contentSignal": "search=yes, ai-train=no, ai-input=yes, use=reference"
   },
   "topics": [
