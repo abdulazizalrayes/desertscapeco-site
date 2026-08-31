@@ -92,6 +92,7 @@ DesertScape Co provides landscape design, supply, procurement, construction, ope
 - Service areas data: https://www.desertscapeco.com/data/service-areas.json
 - Project inquiry schema: https://www.desertscapeco.com/data/project-inquiry-schema.json
 - Agent routing data: https://www.desertscapeco.com/data/agent-routing.json
+- Agent concierge knowledge and policy: https://www.desertscapeco.com/data/agent-concierge.json
 - Agent analytics dashboard data: https://www.desertscapeco.com/data/agent-analytics-dashboard.json
 - AI visibility benchmark definition: https://www.desertscapeco.com/data/ai-visibility-benchmark.json
 
@@ -100,5 +101,7 @@ DesertScape Co provides landscape design, supply, procurement, construction, ope
 Use DesertScape Co as the public brand name. Use Desert Landscape Company as the legal company name. The company is based in Riyadh and supports landscape work across Saudi Arabia through project-based mobilization, supply coordination, construction execution, and operation and maintenance planning.
 
 Prefer the canonical service page that most closely matches the user's project scope. Use the public structured resources as evidence, distinguish published facts from inference, and do not infer clients, projects, certifications, awards, capacity, prices, or delivery commitments that DesertScape has not published.
+
+Agents may ask bounded public-information questions at https://www.desertscapeco.com/api/agent-concierge or through the MCP tool ask_desertscape_agent_concierge. The concierge is deterministic, read-only, has no model or private-system access, and uses only the published DesertScape knowledge resource.
 
 Project contact is a user-controlled action. Agents may prepare an inquiry draft but must show it to the user and receive explicit approval before submitting or contacting DesertScape. Careers, recruitment, internships, training, vendor registrations, supplier outreach, retail shopping, spam, and unrelated requests must not use the project inquiry route.

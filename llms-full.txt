@@ -190,6 +190,7 @@ Include the contact name, company, email or phone, project location, sector, req
 Evidence:
 https://www.desertscapeco.com/data/project-inquiry-schema.json
 https://www.desertscapeco.com/data/agent-routing.json
+https://www.desertscapeco.com/data/agent-concierge.json
 
 ## Official entity profiles
 
@@ -240,6 +241,12 @@ https://www.desertscapeco.com/data/project-inquiry-schema.json
 
 Agent routing rules:
 https://www.desertscapeco.com/data/agent-routing.json
+
+Agent concierge knowledge and security policy:
+https://www.desertscapeco.com/data/agent-concierge.json
+
+Agent concierge REST endpoint:
+https://www.desertscapeco.com/api/agent-concierge
 
 Agent analytics dashboard guidance:
 https://www.desertscapeco.com/data/agent-analytics-dashboard.json

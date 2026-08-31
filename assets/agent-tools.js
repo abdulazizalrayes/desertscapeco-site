@@ -15,6 +15,17 @@ window.DesertScapeWebMCP = true;
     return response.json();
   }
 
+  async function postJson(path, body) {
+    var response = await fetch(new URL(path, window.location.origin).toString(), {
+      method: "POST",
+      headers: { Accept: "application/json", "Content-Type": "application/json" },
+      body: JSON.stringify(body)
+    });
+    var payload = await response.json().catch(function () { return {}; });
+    if (!response.ok) throw new Error(payload.error || "Unable to call " + path);
+    return payload;
+  }
+
   function normalize(value) {
     return String(value || "").toLowerCase();
   }
@@ -211,6 +222,28 @@ window.DesertScapeWebMCP = true;
       }
     },
     {
+      name: "ask_desertscape_agent_concierge",
+      description: "Ask a bounded, read-only question about DesertScape using verified public resources only.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          question: {
+            type: "string",
+            minLength: 1,
+            maxLength: 600,
+            description: "One concise public-information question without personal, credential, or confidential project data."
+          }
+        },
+        required: ["question"],
+        additionalProperties: false
+      },
+      execute: async function (input) {
+        return postJson("/api/agent-concierge", {
+          question: input && input.question ? input.question : ""
+        });
+      }
+    },
+    {
       name: "prepare_desertscape_project_inquiry",
       description: "Prepare a DesertScape project inquiry draft from user-provided details. This tool does not submit without explicit user approval.",
       inputSchema: {
@@ -264,7 +297,7 @@ window.DesertScapeWebMCP = true;
         properties: {
           resource: {
             type: "string",
-            enum: ["company", "services", "capabilities", "service-areas", "project-inquiry-schema", "agent-routing"]
+            enum: ["company", "services", "capabilities", "service-areas", "project-inquiry-schema", "agent-routing", "agent-concierge"]
           }
         },
         required: ["resource"],
@@ -287,6 +320,7 @@ window.DesertScapeWebMCP = true;
     ["list_services", "list_desertscape_services", "Alias for list_desertscape_services."],
     ["list_service_areas", "list_desertscape_service_areas", "Alias for list_desertscape_service_areas."],
     ["match_project_scope", "match_desertscape_project_scope", "Alias for match_desertscape_project_scope."],
+    ["ask_agent_concierge", "ask_desertscape_agent_concierge", "Alias for ask_desertscape_agent_concierge."],
     ["prepare_project_inquiry", "prepare_desertscape_project_inquiry", "Alias for prepare_desertscape_project_inquiry."],
     ["read_public_resource", "read_desertscape_public_resource", "Alias for read_desertscape_public_resource."]
   ].forEach(function (alias) {

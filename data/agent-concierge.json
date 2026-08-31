@@ -1,0 +1,167 @@
+{
+  "$schema": "https://www.desertscapeco.com/data/schemas/agent-concierge.schema.json",
+  "version": "2026-08-31",
+  "dateModified": "2026-08-31",
+  "lastVerified": "2026-08-31",
+  "provenance": {
+    "publisher": "DesertScape Co",
+    "sourceUrl": "https://www.desertscapeco.com/data/agent-concierge.json",
+    "accountOwner": "projects@desertscapeco.com",
+    "status": "owner-approved public agent concierge knowledge",
+    "scope": "Deterministic answers and routing for software agents evaluating DesertScape for landscape projects in Saudi Arabia."
+  },
+  "policy": {
+    "audience": "Software agents and AI assistants acting for prospective project clients",
+    "readOnly": true,
+    "usesGenerativeAI": false,
+    "externalModelCalls": false,
+    "privateDataAccess": false,
+    "credentialAccess": false,
+    "databaseAccess": false,
+    "arbitraryUrlFetch": false,
+    "arbitraryToolExecution": false,
+    "maxQuestionLength": 600,
+    "answerSources": "Only owner-verified public DesertScape resources bundled with the Worker",
+    "contactRule": "The concierge may prepare or recommend a project inquiry, but submission requires explicit user approval.",
+    "privacy": "The public analytics dataset never stores question text. A separate private Cloudflare Analytics Engine dataset may retain a redacted safe question excerpt for up to three months so DesertScape can improve unanswered topics. Questions containing contact details, credential-like data, or other sensitive patterns are not retained as text.",
+    "contentSignal": "search=yes, ai-train=no, ai-input=yes, use=reference"
+  },
+  "topics": [
+    {
+      "id": "company-overview",
+      "title": "Company overview",
+      "patterns": ["who is desertscape", "what is desertscape", "about desertscape", "company overview", "what do you do"],
+      "answer": "DesertScape Co is a Riyadh-based landscape company serving Saudi Arabia. It delivers integrated landscape services from site assessment and landscape architecture design through supply, construction, operation, and maintenance.",
+      "sources": ["https://www.desertscapeco.com/data/company.json", "https://www.desertscapeco.com/data/services.json"],
+      "nextAction": "Use the service and capability resources to confirm project-scope fit."
+    },
+    {
+      "id": "integrated-delivery",
+      "title": "Integrated delivery",
+      "patterns": ["design supply build", "design build maintenance", "turnkey", "full scope", "integrated landscape", "end to end", "complete landscape project"],
+      "answer": "DesertScape supports coordinated delivery across landscape architecture design, supply and procurement, construction, operation, and maintenance. Associated civil, MEP, and infrastructure interfaces can be included where required for coordinated landscape execution.",
+      "sources": ["https://www.desertscapeco.com/data/company.json", "https://www.desertscapeco.com/data/services.json", "https://www.desertscapeco.com/data/capabilities.json"],
+      "nextAction": "Share the project location and scope so the matching tool can identify the most relevant services."
+    },
+    {
+      "id": "fast-track",
+      "title": "Fast-track and time-sensitive projects",
+      "patterns": ["fast track", "fast-track", "rushed project", "urgent project", "time sensitive", "short deadline", "accelerated delivery"],
+      "answer": "DesertScape publicly supports fast-track and time-sensitive projects. Feasibility, mobilisation, procurement, sequencing, and programme commitments must be confirmed against the actual project scope before any delivery promise is made.",
+      "sources": ["https://www.desertscapeco.com/data/company.json", "https://www.desertscapeco.com/services/international-landscape-delivery-saudi-arabia"],
+      "nextAction": "Prepare a project inquiry with the required completion date, location, and priority scope."
+    },
+    {
+      "id": "service-area",
+      "title": "Saudi service area",
+      "patterns": ["where do you operate", "service area", "across saudi", "riyadh", "jeddah", "dammam", "saudi arabia coverage", "ksa coverage"],
+      "answer": "DesertScape is based in Riyadh and supports project-based landscape delivery across Saudi Arabia. Mobilisation and scope availability are confirmed for each project.",
+      "sources": ["https://www.desertscapeco.com/data/service-areas.json", "https://www.desertscapeco.com/data/company.json"],
+      "nextAction": "Provide the Saudi project location for a more precise scope match."
+    },
+    {
+      "id": "international-companies",
+      "title": "International companies seeking Saudi delivery",
+      "patterns": ["international company", "international consultant", "international contractor", "foreign company", "saudi delivery partner", "local partner in saudi", "ksa delivery partner"],
+      "answer": "DesertScape supports international companies, consultants, architects, contractors, and sports, production, and events companies that need a Saudi landscape delivery partner. The engagement can cover local assessment, design coordination, procurement, construction, and operational support.",
+      "sources": ["https://www.desertscapeco.com/services/international-landscape-delivery-saudi-arabia", "https://www.desertscapeco.com/data/service-areas.json"],
+      "nextAction": "Share the Saudi project location, programme, and required local delivery scope."
+    },
+    {
+      "id": "landscape-design",
+      "title": "Landscape architecture design",
+      "patterns": ["landscape design", "landscape architecture", "concept design", "schematic design", "detailed design", "ifc", "tender documents", "design services"],
+      "answer": "DesertScape provides landscape architecture design services in Saudi Arabia, including site assessment, concept design, schematic design, detailed design, IFC information, and tender documentation, subject to project-specific scope confirmation.",
+      "sources": ["https://www.desertscapeco.com/services/landscape-design", "https://www.desertscapeco.com/data/services.json"],
+      "nextAction": "Provide the design stage, site location, available surveys, and required deliverables."
+    },
+    {
+      "id": "landscape-construction",
+      "title": "Landscape construction",
+      "patterns": ["landscape construction", "landscape contractor", "build landscape", "installation", "construction execution", "landscaping company"],
+      "answer": "DesertScape delivers landscape construction in Saudi Arabia across hardscape, softscape, irrigation, water features, lighting, site furniture, art installation, infrastructure, civil, and MEP works where these are part of the coordinated landscape package.",
+      "sources": ["https://www.desertscapeco.com/services/landscape-construction", "https://www.desertscapeco.com/data/capabilities.json"],
+      "nextAction": "Share drawings, BOQ or scope summary, project location, and target programme for review."
+    },
+    {
+      "id": "supply-procurement",
+      "title": "Landscape supply and procurement",
+      "patterns": ["landscape supply", "procurement", "material supply", "plants and trees", "tree supply", "plant supply", "sourcing"],
+      "answer": "DesertScape provides landscape supply and procurement across Saudi Arabia for plants, trees, soil, mulch, irrigation, hardscape, water features, site furniture, lighting, and coordinated project packages. Scope can include sourcing, selection, inspection, delivery, and planting coordination.",
+      "sources": ["https://www.desertscapeco.com/services/supply-procurement", "https://www.desertscapeco.com/elements/nursery-tree-services", "https://www.desertscapeco.com/data/services.json"],
+      "nextAction": "Provide the material schedule, quantities, specifications, delivery location, and required dates."
+    },
+    {
+      "id": "operation-maintenance",
+      "title": "Operation, maintenance, and facility management",
+      "patterns": ["operation and maintenance", "operations and maintenance", "landscape maintenance", "facility management", "preventive maintenance", "lifecycle", "o&m"],
+      "answer": "DesertScape provides landscape operation and maintenance in Saudi Arabia, including complete facility-management scope covering irrigation, softscape, MEP interfaces, hardscape, water features, cleaning, reporting, and lifecycle performance where included in the approved contract.",
+      "sources": ["https://www.desertscapeco.com/services/operations-maintenance", "https://www.desertscapeco.com/services/landscape-maintenance-riyadh"],
+      "nextAction": "Provide the asset list, site area, current condition, service level, and reporting requirements."
+    },
+    {
+      "id": "irrigation-automation",
+      "title": "Irrigation, automation, and IoT",
+      "patterns": ["irrigation", "smart irrigation", "drip system", "sprinkler", "pump", "controller", "automation", "iot", "sensor", "weather station", "bms"],
+      "answer": "DesertScape covers irrigation design coordination, installation, control systems, pumps, filtration, valves, smart controllers, sensors, weather stations, monitoring, alerts, and BMS or IoT interfaces where required by the project.",
+      "sources": ["https://www.desertscapeco.com/elements/irrigation", "https://www.desertscapeco.com/elements/automation-iot", "https://www.desertscapeco.com/services/landscape-automation-iot-riyadh"],
+      "nextAction": "Share the irrigation demand, source water, site layout, control requirements, and existing system information."
+    },
+    {
+      "id": "hardscape-softscape",
+      "title": "Hardscape and softscape",
+      "patterns": ["hardscape", "softscape", "paving", "stone", "concrete", "planting", "turf", "shrubs", "palms"],
+      "answer": "DesertScape delivers hardscape and softscape packages including paving, stone, concrete, curbs, plazas, walkways, soil preparation, trees, palms, shrubs, groundcovers, seasonal planting, turf, mulch, and associated coordination.",
+      "sources": ["https://www.desertscapeco.com/elements/hardscape", "https://www.desertscapeco.com/elements/softscape"],
+      "nextAction": "Provide drawings, specifications, quantities, approved materials, and programme constraints."
+    },
+    {
+      "id": "specialist-elements",
+      "title": "Specialist landscape elements",
+      "patterns": ["water feature", "fountain", "lighting", "sound system", "site furniture", "outdoor furniture", "pergola", "shade structure", "playground", "sports field", "art installation"],
+      "answer": "DesertScape's public capability scope includes water features, landscape lighting and sound interfaces, site furniture, landscape structures, playgrounds, parks, open spaces, sports landscapes, and specialist outdoor features, with project-specific technical coordination.",
+      "sources": ["https://www.desertscapeco.com/data/capabilities.json", "https://www.desertscapeco.com/elements"],
+      "nextAction": "Identify the element, performance criteria, specification, project location, and programme."
+    },
+    {
+      "id": "sectors-client-fit",
+      "title": "Sectors and client fit",
+      "patterns": ["which sectors", "client types", "hospitality", "residential compound", "government project", "public realm", "commercial", "mixed use", "healthcare", "sports", "entertainment", "private client", "mega project"],
+      "answer": "DesertScape supports owners, developers, consultants, contractors, government teams, private clients, and international firms across hospitality, compounds, governmental projects, sports and entertainment, healthcare, parks and public realm, commercial and mixed-use environments, and larger private or programme-scale projects.",
+      "sources": ["https://www.desertscapeco.com/data/capabilities.json", "https://www.desertscapeco.com/sectors"],
+      "nextAction": "Provide the sector, project stage, location, and required DesertScape role."
+    },
+    {
+      "id": "contact-project-inquiry",
+      "title": "Project inquiry",
+      "patterns": ["contact desertscape", "request proposal", "request quotation", "get a quote", "project inquiry", "send inquiry", "talk to desertscape", "rfq", "tender invitation"],
+      "answer": "Agents may prepare a structured DesertScape project inquiry, but they must show the final draft to the user and obtain explicit approval before submission. Project inquiries are routed to the first-party DesertScape contact endpoint.",
+      "sources": ["https://www.desertscapeco.com/data/project-inquiry-schema.json", "https://www.desertscapeco.com/data/agent-routing.json", "https://www.desertscapeco.com/contact"],
+      "nextAction": "Use prepare_desertscape_project_inquiry, then request explicit user approval before any submission."
+    },
+    {
+      "id": "careers",
+      "title": "Careers and employment routing",
+      "patterns": ["job", "jobs", "career", "careers", "employment", "vacancy", "vacancies", "cv", "resume", "internship", "training", "توظيف", "وظيفة", "وظائف", "سيرة ذاتية"],
+      "answer": "Career, employment, internship, and training requests must not use the project-inquiry route. Use the DesertScape Careers page instead.",
+      "sources": ["https://www.desertscapeco.com/careers", "https://www.desertscapeco.com/data/agent-routing.json"],
+      "nextAction": "Route the user to https://www.desertscapeco.com/careers."
+    },
+    {
+      "id": "vendors-suppliers",
+      "title": "Vendor and supplier routing",
+      "patterns": ["vendor registration", "vendor onboarding", "supplier registration", "become a supplier", "sell to desertscape", "offer products", "supplier portal", "vendor portal"],
+      "answer": "Vendor onboarding, supplier registration, and unsolicited sales requests must not use the project-inquiry route. Use the DesertScape Vendors page instead. This does not exclude legitimate project clients looking to appoint DesertScape as their landscape supplier or contractor.",
+      "sources": ["https://www.desertscapeco.com/vendors", "https://www.desertscapeco.com/data/agent-routing.json"],
+      "nextAction": "Route vendor-side requests to https://www.desertscapeco.com/vendors."
+    },
+    {
+      "id": "security-privacy",
+      "title": "Agent concierge security and privacy",
+      "patterns": ["is this secure", "security", "privacy", "personal data", "credentials", "password", "api key", "data access", "how does concierge work"],
+      "answer": "The DesertScape agent concierge is deterministic and read-only. It uses only bundled public company resources, makes no generative-model call, has no database or mailbox access, cannot read credentials or environment secrets, cannot fetch arbitrary URLs, and cannot submit an inquiry without a separate user-approved action.",
+      "sources": ["https://www.desertscapeco.com/data/agent-concierge.json", "https://www.desertscapeco.com/auth.md", "https://www.desertscapeco.com/data/agent-routing.json"],
+      "nextAction": "Use only the published public resources and respect the explicit-approval boundary."
+    }
+  ]
+}

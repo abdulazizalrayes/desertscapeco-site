@@ -2,8 +2,8 @@
   "openapi": "3.1.0",
   "info": {
     "title": "DesertScape Website Inquiry and Discovery API",
-    "version": "2026-06-13",
-    "description": "Public discovery and user-authorized inquiry interface for DesertScape Co. Agents may read public data endpoints and prepare project inquiries, but must get explicit user approval before submitting any form."
+    "version": "2026-08-31",
+    "description": "Public discovery, deterministic agent concierge, and user-authorized inquiry interface for DesertScape Co. Agents may read public data, ask bounded questions, and prepare project inquiries, but must get explicit user approval before submitting any form."
   },
   "servers": [
     {
@@ -125,6 +125,25 @@
         }
       }
     },
+    "/data/agent-concierge.json": {
+      "get": {
+        "operationId": "getDesertScapeAgentConciergeKnowledge",
+        "summary": "Get agent concierge knowledge and security policy",
+        "description": "Returns owner-verified topics, deterministic answers, public sources, privacy rules, and the explicit approval boundary used by the DesertScape agent concierge.",
+        "responses": {
+          "200": {
+            "description": "Agent concierge knowledge and policy",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://www.desertscapeco.com/data/schemas/agent-concierge.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/data/agent-analytics-dashboard.json": {
       "get": {
         "operationId": "getDesertScapeAgentAnalyticsDashboard",
@@ -140,6 +159,75 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/data/ai-visibility-benchmark.json": {
+      "get": {
+        "operationId": "getDesertScapeAiVisibilityBenchmark",
+        "summary": "Get the fixed DesertScape AI visibility benchmark definition",
+        "description": "Returns the bilingual monthly prompt panel and evidence rules used to measure mentions and citations without confusing endpoint availability with organic visibility.",
+        "responses": {
+          "200": {
+            "description": "AI visibility benchmark definition",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://www.desertscapeco.com/data/schemas/ai-visibility-benchmark.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/agent-concierge": {
+      "post": {
+        "operationId": "askDesertScapeAgentConcierge",
+        "summary": "Ask a bounded public-information question about DesertScape",
+        "description": "Returns a deterministic answer from owner-verified public DesertScape resources. The endpoint has no generative-model, database, mailbox, credential, arbitrary URL, or inquiry-submission access. Do not send personal, credential, or confidential project data.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "question": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 600
+                  }
+                },
+                "required": ["question"],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Question answered or safely marked unanswered",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid JSON or question"
+          },
+          "413": {
+            "description": "Request body too large"
+          },
+          "415": {
+            "description": "Content type must be application/json"
+          },
+          "429": {
+            "description": "Rate limited"
           }
         }
       }

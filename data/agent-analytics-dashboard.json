@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.desertscapeco.com/data/schemas/agent-analytics-dashboard.schema.json",
-  "version": "2026-08-25",
-  "dateModified": "2026-08-25",
-  "lastVerified": "2026-08-25",
+  "version": "2026-08-31",
+  "dateModified": "2026-08-31",
+  "lastVerified": "2026-08-31",
   "status": "enabled-through-cloudflare-workers-analytics-engine",
   "provenance": {
     "publisher": "DesertScape Co",
@@ -43,6 +43,8 @@
     "mcp_request",
     "mcp_tool_call",
     "mcp_resource_read",
+    "concierge_question",
+    "agent_rate_limited",
     "openapi_read",
     "llms_read",
     "llms_full_read",
@@ -148,6 +150,8 @@
   ],
   "queryDocumentation": "docs/CLOUDFLARE_AGENT_ANALYTICS.md",
   "publicEndpoints": {
+    "agentConcierge": "https://www.desertscapeco.com/api/agent-concierge",
+    "agentConciergeKnowledge": "https://www.desertscapeco.com/data/agent-concierge.json",
     "mcpCompatibility": "https://www.desertscapeco.com/mcp",
     "mcpSdk": "https://www.desertscapeco.com/mcp-sdk",
     "llms": "https://www.desertscapeco.com/llms.txt",

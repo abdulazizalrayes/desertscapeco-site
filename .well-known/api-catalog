@@ -78,9 +78,36 @@
           "title": "Agent routing rules"
         },
         {
+          "href": "https://www.desertscapeco.com/data/agent-concierge.json",
+          "type": "application/json",
+          "title": "Agent concierge knowledge and security policy"
+        },
+        {
           "href": "https://www.desertscapeco.com/data/agent-analytics-dashboard.json",
           "type": "application/json",
           "title": "Agent analytics dashboard guidance"
+        },
+        {
+          "href": "https://www.desertscapeco.com/data/ai-visibility-benchmark.json",
+          "type": "application/json",
+          "title": "Fixed bilingual AI visibility benchmark definition"
+        }
+      ]
+    },
+    {
+      "anchor": "https://www.desertscapeco.com/api/agent-concierge",
+      "service-desc": [
+        {
+          "href": "https://www.desertscapeco.com/openapi.json",
+          "type": "application/vnd.oai.openapi+json",
+          "title": "DesertScape Agent Concierge OpenAPI"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://www.desertscapeco.com/data/agent-concierge.json",
+          "type": "application/json",
+          "title": "Agent concierge knowledge and policy"
         }
       ]
     },

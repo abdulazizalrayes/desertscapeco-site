@@ -1,7 +1,7 @@
 {
   "serverInfo": {
     "name": "DesertScape Co MCP SDK",
-    "version": "2026-06-13"
+    "version": "2026-08-31"
   },
   "transport": {
     "type": "streamable-http",
@@ -30,6 +30,8 @@
     "list_service_areas",
     "match_desertscape_project_scope",
     "match_project_scope",
+    "ask_desertscape_agent_concierge",
+    "ask_agent_concierge",
     "prepare_desertscape_project_inquiry",
     "prepare_project_inquiry",
     "read_desertscape_public_resource",
@@ -68,6 +70,16 @@
     {
       "uri": "https://www.desertscapeco.com/data/agent-analytics-dashboard.json",
       "name": "DesertScape agent analytics dashboard guidance",
+      "mimeType": "application/json"
+    },
+    {
+      "uri": "https://www.desertscapeco.com/data/agent-concierge.json",
+      "name": "DesertScape agent concierge knowledge and policy",
+      "mimeType": "application/json"
+    },
+    {
+      "uri": "https://www.desertscapeco.com/data/ai-visibility-benchmark.json",
+      "name": "DesertScape bilingual AI visibility benchmark definition",
       "mimeType": "application/json"
     }
   ]

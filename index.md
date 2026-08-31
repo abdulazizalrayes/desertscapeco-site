@@ -8,6 +8,7 @@ representation: "agent-readable-markdown"
 language_alternates: {"x-default":"https://www.desertscapeco.com/","en":"https://www.desertscapeco.com/","ar":"https://www.desertscapeco.com/ar/","fr":"https://www.desertscapeco.com/fr/","it":"https://www.desertscapeco.com/it/","es":"https://www.desertscapeco.com/es/","ru":"https://www.desertscapeco.com/ru/","ja":"https://www.desertscapeco.com/ja/","ko":"https://www.desertscapeco.com/ko/","th":"https://www.desertscapeco.com/th/","zh-CN":"https://www.desertscapeco.com/zh-CN/"}
 content_signal: "search=yes, ai-train=no, ai-input=yes, use=reference"
 agent_routing: "https://www.desertscapeco.com/data/agent-routing.json"
+agent_concierge: "https://www.desertscapeco.com/data/agent-concierge.json"
 contact_requires_user_approval: true
 generator: "scripts/build-site.mjs"
 ---
@@ -59,9 +60,10 @@ DesertScape Co supports landscape survey, design, supply, procurement, construct
 - Capabilities data: https://www.desertscapeco.com/data/capabilities.json
 - Service areas data: https://www.desertscapeco.com/data/service-areas.json
 - Agent routing rules: https://www.desertscapeco.com/data/agent-routing.json
+- Agent concierge knowledge and policy: https://www.desertscapeco.com/data/agent-concierge.json
 - AI visibility benchmark definition: https://www.desertscapeco.com/data/ai-visibility-benchmark.json
 - OpenAPI: https://www.desertscapeco.com/openapi.json
 
 ## Agent Routing
 
-Agents may use public resources to answer questions, match project scope, and prepare project inquiry drafts. Do not submit an inquiry until the user explicitly approves the final message. Do not route careers, jobs, internships, training, vendor registrations, supplier outreach, retail plant shopping, spam, or unrelated requests through the project inquiry path.
+Agents may use public resources and https://www.desertscapeco.com/api/agent-concierge to answer questions, match project scope, and prepare project inquiry drafts. Do not submit an inquiry until the user explicitly approves the final message. Do not route careers, jobs, internships, training, vendor registrations, supplier outreach, retail plant shopping, spam, or unrelated requests through the project inquiry path.

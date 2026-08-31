@@ -1,6 +1,6 @@
 {
   "name": "DesertScape Co Agent Interface",
-  "version": "2026-06-13",
+  "version": "2026-08-31",
   "description": "Agent-facing discovery for DesertScape Co, a Riyadh-based landscape company serving Saudi Arabia.",
   "url": "https://www.desertscapeco.com/",
   "supportedInterfaces": [
@@ -30,6 +30,16 @@
       "description": "Privacy-safe agent analytics and monitoring guidance."
     },
     {
+      "url": "https://www.desertscapeco.com/data/agent-concierge.json",
+      "transport": "https",
+      "description": "Owner-verified deterministic concierge knowledge, sources, privacy rules, and approval boundary."
+    },
+    {
+      "url": "https://www.desertscapeco.com/data/ai-visibility-benchmark.json",
+      "transport": "https",
+      "description": "Fixed bilingual prompt panel for evidence-based monthly AI visibility measurement."
+    },
+    {
       "url": "https://www.desertscapeco.com/index.md",
       "transport": "https",
       "description": "Markdown homepage optimized for AI assistants and command-line readers."
@@ -38,6 +48,11 @@
       "url": "https://www.desertscapeco.com/api/inquiry",
       "transport": "https",
       "description": "User-approved project inquiry submission endpoint."
+    },
+    {
+      "url": "https://www.desertscapeco.com/api/agent-concierge",
+      "transport": "https",
+      "description": "Read-only deterministic question endpoint for software agents."
     },
     {
       "url": "https://www.desertscapeco.com/mcp-sdk",
@@ -52,6 +67,7 @@
   ],
   "capabilities": {
     "publicInformation": true,
+    "agentConcierge": "deterministic, public-data-only, read-only",
     "projectInquiryPreparation": true,
     "projectInquirySubmission": "only after explicit user approval",
     "scopeMatching": true,
@@ -73,6 +89,11 @@
       "id": "match-project-scope",
       "name": "Match a project scope to DesertScape services",
       "description": "Use public service and capability data to recommend relevant DesertScape pages and inquiry fields."
+    },
+    {
+      "id": "ask-agent-concierge",
+      "name": "Ask the DesertScape agent concierge",
+      "description": "Ask a bounded question answered only from owner-verified public DesertScape resources."
     }
   ]
 }

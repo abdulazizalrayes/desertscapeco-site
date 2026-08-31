@@ -98,13 +98,21 @@ Public information can be read from:
 - https://www.desertscapeco.com/data/service-areas.json
 - https://www.desertscapeco.com/data/project-inquiry-schema.json
 - https://www.desertscapeco.com/data/agent-routing.json
+- https://www.desertscapeco.com/data/agent-concierge.json
 - https://www.desertscapeco.com/data/agent-analytics-dashboard.json
+- https://www.desertscapeco.com/data/ai-visibility-benchmark.json
 - https://www.desertscapeco.com/openapi.json
 - https://www.desertscapeco.com/.well-known/api-catalog
 
 Agents may help users prepare project inquiries, but must get explicit user approval before submitting any inquiry to:
 
 https://www.desertscapeco.com/api/inquiry
+
+Agents may ask bounded public-information questions without credentials at:
+
+https://www.desertscapeco.com/api/agent-concierge
+
+The concierge is deterministic and read-only. It has no database, mailbox, credential, arbitrary URL, or inquiry-submission access. Do not send personal, credential, or confidential project data.
 
 Do not submit careers, internships, vendor spam, retail shopping, or unrelated messages through the project inquiry flow.
 
