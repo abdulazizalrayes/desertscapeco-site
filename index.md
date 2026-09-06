@@ -1,6 +1,6 @@
 ---
-title: "DesertScape Co | Landscape Company in Riyadh, Saudi Arabia"
-description: "DesertScape Co supports landscape design, supply, construction, operation, and maintenance in Saudi Arabia."
+title: "Landscape Design Company in Riyadh, Saudi Arabia | DesertScape Co"
+description: "DesertScape is a Riyadh based landscape design and construction company serving Saudi Arabia, with supply, irrigation, hardscape, softscape, and maintenance."
 canonical: "https://www.desertscapeco.com/"
 language: "en"
 publisher: "DesertScape Co"

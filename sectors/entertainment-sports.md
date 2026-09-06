@@ -1,6 +1,6 @@
 ---
-title: "Entertainment and Sports Landscape Services | DesertScape Co"
-description: "Entertainment and Sports landscape services by DesertScape Co in Saudi Arabia, including design, supply, construction, operation, and maintenance."
+title: "Entertainment Destination Landscaping Saudi Arabia | DesertScape Co"
+description: "Landscape design, construction, and maintenance for entertainment destinations, sports venues, events, and outdoor recreation across Saudi Arabia."
 canonical: "https://www.desertscapeco.com/sectors/entertainment-sports"
 language: "en"
 publisher: "DesertScape Co"

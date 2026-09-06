@@ -1,5 +1,5 @@
 ---
-title: "Landscape Contractor Riyadh | DesertScape Co"
+title: "Landscape Contractor in Riyadh, Saudi Arabia | DesertScape Co"
 description: "Landscape contractor services in Riyadh for design coordination, supply, construction, irrigation, hardscape, softscape, lighting, and maintenance planning."
 canonical: "https://www.desertscapeco.com/services/landscape-contractor-riyadh"
 language: "en"
